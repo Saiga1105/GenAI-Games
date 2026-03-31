@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GenAI Games Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 760px;
+      margin: 40px auto;
+      background: rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 2.2rem;
+    }
+    p {
+      color: #dbeafe;
+    }
+    .section {
+      margin-bottom: 28px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 6px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      border: none;
+      margin-bottom: 10px;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+    .checkbox-group,
+    .radio-group {
+      display: grid;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .checkbox-group label,
+    .radio-group label {
+      font-weight: normal;
+      background: rgba(255,255,255,0.06);
+      padding: 10px 12px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button {
+      background: #38bdf8;
+      color: #082f49;
+      border: none;
+      padding: 14px 22px;
+      font-size: 1rem;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background: #7dd3fc;
+    }
+    #status {
+      margin-top: 18px;
+      font-weight: bold;
+    }
+    .small {
+      font-size: 0.95rem;
+      color: #cbd5e1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Enter the GenAI Games</h1>
+    <p>Register for the event and reveal your AI powers.</p>
+    <p><strong>17 April | 14:00–17:00 | followed by a reception</strong></p>
+
+    <form id="registrationForm">
+      <div class="section">
+        <h2>1. Registration</h2>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
+
+        <label for="group">Research group</label>
+        <select id="group" required>
+          <option value="">Select...</option>
+          <option>Footbridge dynamics</option>
+          <option>Concrete compositions / healing concretes</option>
+          <option>Sustainable buildings / energy / comfort / CO2</option>
+          <option>Geomatics / surveying / UAV / point clouds</option>
+          <option>Other</option>
+        </select>
+
+        <label for="attendance">Will you attend?</label>
+        <select id="attendance" required>
+          <option value="">Select...</option>
+          <option>Yes</option>
+          <option>Maybe</option>
+          <option>No</option>
+        </select>
+
+        <label for="dietary">Dietary restrictions</label>
+        <input type="text" id="dietary" placeholder="Optional" />
+      </div>
+
+      <div class="section">
+        <h2>2. Your GenAI level</h2>
+
+        <div class="radio-group">
+          <label><input type="radio" name="level" value="I’ve barely tried it" required> I’ve barely tried it</label>
+          <label><input type="radio" name="level" value="I use it occasionally"> I use it occasionally</label>
+          <label><input type="radio" name="level" value="I use it weekly"> I use it weekly</label>
+          <label><input type="radio" name="level" value="I use it a lot"> I use it a lot</label>
+          <label><input type="radio" name="level" value="I build workflows with it"> I build workflows with it</label>
+        </div>
+
+        <label for="confidence">How confident are you with GenAI? (1–5)</label>
+        <select id="confidence" required>
+          <option value="">Select...</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+
+      <div class="section">
+        <h2>3. What do you use?</h2>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="tools" value="ChatGPT"> ChatGPT</label>
+          <label><input type="checkbox" name="tools" value="Copilot"> Copilot</label>
+          <label><input type="checkbox" name="tools" value="Claude"> Claude</label>
+          <label><input type="checkbox" name="tools" value="Gemini"> Gemini</label>
+          <label><input type="checkbox" name="tools" value="Coding assistants"> Coding assistants</label>
+          <label><input type="checkbox" name="tools" value="Image generation"> Image generation</label>
+          <label><input type="checkbox" name="tools" value="Data analysis tools"> Data analysis tools</label>
+          <label><input type="checkbox" name="tools" value="Other"> Other</label>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>4. What do you use it for?</h2>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="useCases" value="Writing emails / text"> Writing emails / text</label>
+          <label><input type="checkbox" name="useCases" value="Coding / scripting"> Coding / scripting</label>
+          <label><input type="checkbox" name="useCases" value="Data cleaning"> Data cleaning</label>
+          <label><input type="checkbox" name="useCases" value="Data analysis"> Data analysis</label>
+          <label><input type="checkbox" name="useCases" value="Brainstorming"> Brainstorming</label>
+          <label><input type="checkbox" name="useCases" value="Literature review"> Literature review</label>
+          <label><input type="checkbox" name="useCases" value="Figure creation"> Figure creation</label>
+          <label><input type="checkbox" name="useCases" value="Presentation prep"> Presentation prep</label>
+          <label><input type="checkbox" name="useCases" value="Research planning"> Research planning</label>
+          <label><input type="checkbox" name="useCases" value="Admin tasks"> Admin tasks</label>
+          <label><input type="checkbox" name="useCases" value="Teaching support"> Teaching support</label>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>5. One real example</h2>
+        <label for="example">What is one thing you have already used GenAI for in your work?</label>
+        <textarea id="example" placeholder="Optional"></textarea>
+        <p class="small">Keep it short — one concrete example is enough.</p>
+      </div>
+
+      <button type="submit">Submit registration</button>
+      <div id="status"></div>
+    </form>
+  </div>
+
+  <script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbxCoBleob-wSKjMc0T73_w1ayv3pAr-28gYBQ3LTamRQnzKVH7BFWdcJit4HgRbrvRzPg/exec";
+
+    document.getElementById("registrationForm").addEventListener("submit", async function(e) {
+      e.preventDefault();
+
+      const tools = [...document.querySelectorAll('input[name="tools"]:checked')].map(el => el.value);
+      const useCases = [...document.querySelectorAll('input[name="useCases"]:checked')].map(el => el.value);
+      const level = document.querySelector('input[name="level"]:checked')?.value || "";
+
+      const payload = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        group: document.getElementById("group").value,
+        attendance: document.getElementById("attendance").value,
+        dietary: document.getElementById("dietary").value,
+        level: level,
+        confidence: document.getElementById("confidence").value,
+        tools: tools,
+        useCases: useCases,
+        example: document.getElementById("example").value
+      };
+
+      const status = document.getElementById("status");
+      status.textContent = "Submitting...";
+
+      try {
+        const response = await fetch(scriptURL, {
+          method: "POST",
+          body: JSON.stringify(payload),
+          headers: {
+            "Content-Type": "application/json"
+          }
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+          status.textContent = "Registration submitted successfully.";
+          document.getElementById("registrationForm").reset();
+        } else {
+          status.textContent = "Something went wrong.";
+        }
+      } catch (error) {
+        status.textContent = "Submission failed. Check the web app URL and deployment settings.";
+      }
+    });
+  </script>
+</body>
+</html>

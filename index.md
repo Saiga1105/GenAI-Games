@@ -162,4 +162,4 @@ No advanced AI experience is required. Curiosity matters more than expertise. Be
 
 ## Register
 
-[Register for GenAI Games](https://script.google.com/macros/s/AKfycbxCoBleob-wSKjMc0T73_w1ayv3pAr-28gYBQ3LTamRQnzKVH7BFWdcJit4HgRbrvRzPg/exec)
+[Register for GenAI Games](google/index.html)
