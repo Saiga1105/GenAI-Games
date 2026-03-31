@@ -1,13 +1,2 @@
 title: "GenAI Games"
-email: "maarten.bassier@kuleuven.be"
-description: "A playful, high-energy research event where PhD researchers compete in mixed teams to solve short challenges using generative AI."
-baseurl: ""
-url: ""
-remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: "default"
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-include-cache
-
-# Navigation removed for single-page tabbed interface
+description: "A playful, high-energy research event where PhD researchers from four construction-related research groups compete in mixed teams to solve short challenges using generative AI."
