@@ -24,6 +24,9 @@
       margin-top: 0;
       font-size: 2.2rem;
     }
+    h2 {
+      margin-bottom: 12px;
+    }
     p {
       color: #dbeafe;
     }
@@ -121,9 +124,6 @@
           <option>Maybe</option>
           <option>No</option>
         </select>
-
-        <label for="dietary">Dietary restrictions</label>
-        <input type="text" id="dietary" placeholder="Optional" />
       </div>
 
       <div class="section">
@@ -136,16 +136,6 @@
           <label><input type="radio" name="level" value="I use it a lot"> I use it a lot</label>
           <label><input type="radio" name="level" value="I build workflows with it"> I build workflows with it</label>
         </div>
-
-        <label for="confidence">How confident are you with GenAI? (1–5)</label>
-        <select id="confidence" required>
-          <option value="">Select...</option>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
       </div>
 
       <div class="section">
@@ -163,24 +153,7 @@
       </div>
 
       <div class="section">
-        <h2>4. What do you use it for?</h2>
-        <div class="checkbox-group">
-          <label><input type="checkbox" name="useCases" value="Writing emails / text"> Writing emails / text</label>
-          <label><input type="checkbox" name="useCases" value="Coding / scripting"> Coding / scripting</label>
-          <label><input type="checkbox" name="useCases" value="Data cleaning"> Data cleaning</label>
-          <label><input type="checkbox" name="useCases" value="Data analysis"> Data analysis</label>
-          <label><input type="checkbox" name="useCases" value="Brainstorming"> Brainstorming</label>
-          <label><input type="checkbox" name="useCases" value="Literature review"> Literature review</label>
-          <label><input type="checkbox" name="useCases" value="Figure creation"> Figure creation</label>
-          <label><input type="checkbox" name="useCases" value="Presentation prep"> Presentation prep</label>
-          <label><input type="checkbox" name="useCases" value="Research planning"> Research planning</label>
-          <label><input type="checkbox" name="useCases" value="Admin tasks"> Admin tasks</label>
-          <label><input type="checkbox" name="useCases" value="Teaching support"> Teaching support</label>
-        </div>
-      </div>
-
-      <div class="section">
-        <h2>5. One real example</h2>
+        <h2>4. One real example</h2>
         <label for="example">What is one thing you have already used GenAI for in your work?</label>
         <textarea id="example" placeholder="Optional"></textarea>
         <p class="small">Keep it short — one concrete example is enough.</p>
@@ -198,44 +171,32 @@
       e.preventDefault();
 
       const tools = [...document.querySelectorAll('input[name="tools"]:checked')].map(el => el.value);
-      const useCases = [...document.querySelectorAll('input[name="useCases"]:checked')].map(el => el.value);
       const level = document.querySelector('input[name="level"]:checked')?.value || "";
 
-      const payload = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        group: document.getElementById("group").value,
-        attendance: document.getElementById("attendance").value,
-        dietary: document.getElementById("dietary").value,
-        level: level,
-        confidence: document.getElementById("confidence").value,
-        tools: tools,
-        useCases: useCases,
-        example: document.getElementById("example").value
-      };
+      const payload = new URLSearchParams();
+      payload.append("name", document.getElementById("name").value);
+      payload.append("email", document.getElementById("email").value);
+      payload.append("group", document.getElementById("group").value);
+      payload.append("attendance", document.getElementById("attendance").value);
+      payload.append("level", level);
+      payload.append("tools", tools.join(", "));
+      payload.append("example", document.getElementById("example").value);
 
       const status = document.getElementById("status");
       status.textContent = "Submitting...";
 
       try {
-        const response = await fetch(scriptURL, {
+        await fetch(scriptURL, {
           method: "POST",
-          body: JSON.stringify(payload),
-          headers: {
-            "Content-Type": "application/json"
-          }
+          body: payload,
+          mode: "no-cors"
         });
 
-        const result = await response.json();
-
-        if (result.success) {
-          status.textContent = "Registration submitted successfully.";
-          document.getElementById("registrationForm").reset();
-        } else {
-          status.textContent = "Something went wrong.";
-        }
+        status.textContent = "Registration submitted successfully.";
+        document.getElementById("registrationForm").reset();
       } catch (error) {
-        status.textContent = "Submission failed. Check the web app URL and deployment settings.";
+        console.error(error);
+        status.textContent = "Submission failed. Please try again.";
       }
     });
   </script>
