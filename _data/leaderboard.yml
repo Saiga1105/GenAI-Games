@@ -1,0 +1,9 @@
+- rank: 1
+  name: "Alice"
+  score: 100
+- rank: 2
+  name: "Bob"
+  score: 80
+- rank: 3
+  name: "Charlie"
+  score: 60

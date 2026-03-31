@@ -1,0 +1,11 @@
+title: "GenAI Games"
+email: "contact@genaigames.com"
+description: "A platform for GenAI tasks, subscriptions, and leaderboard"
+baseurl: ""
+url: ""
+remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: "default"
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-include-cache

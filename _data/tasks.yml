@@ -1,0 +1,9 @@
+- id: 1
+  description: "Analyze the dataset and find the average value."
+  data_file: "data1.csv"
+- id: 2
+  description: "Classify the images in the zip file."
+  data_file: "images.zip"
+- id: 3
+  description: "Solve the puzzle and submit the solution."
+  data_file: "puzzle.txt"
