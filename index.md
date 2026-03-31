@@ -6,7 +6,7 @@ layout: default
     <img src="logo.png" alt="GenAI Games Logo" class="logo">
     <h1>GenAI Games</h1>
     <p>A playful, high-energy research event where PhD researchers from four construction-related research groups compete in mixed teams to solve short challenges using generative AI.</p>
-    <a href="google/index.html">Register Now</a>
+    <a href="google/index.html"class="register-btn">Register Now</a>
 </div>
 
 <div class="content-section">
@@ -38,27 +38,28 @@ layout: default
     <h2>Participating Research Groups</h2>
     <div class="research-groups">
         <div class="group-card">
-            <h4>Dynamics of Footbridges</h4>
+            <h4>		Structural Mechanics</h4>
             <img src="dynamics.png" alt="Dynamics of Footbridges" style="width: 100%; height: 150px; object-fit: cover; border-radius: 5px; margin-bottom: 10px;">
-            <p>This group focuses on the dynamic behaviour of footbridges, including vibration performance, pedestrian-induced loading, and structural comfort and safety. Their work deals with how bridges behave under real use and how design and analysis can improve user experience and structural reliability.</p>
+            <p>    The noble tribe of mechanics: guardians of vibrating footbridges, seekers of elegant equations, and fearless interpreters of structural chaos. Rumour has it they are powered by Duvel, sustained by elite athleticism, and occasionally distracted by dogs. If something starts wobbling, bouncing, or resonating, they will calmly assure you that this is all part of the science.
+            </p>
         </div>
-
         <div class="group-card">
-            <h4>Concrete Compositions and Healing Concretes</h4>
+            <h4>Materials and Constructions</h4>
             <img src="concrete.png" alt="Concrete Compositions" style="width: 100%; height: 150px; object-fit: cover; border-radius: 5px; margin-bottom: 10px;">
-            <p>This group works on concrete materials, including innovative mix designs and self-healing or healing-enhanced concretes. Their research explores performance, durability, sustainability, and novel ways to improve construction materials.</p>
+            <p>    A colourful clan of makers, experimenters, and concrete whisperers, this group blends scientific rigour with a suspicious amount of creativity. Known for their love of speed, strong opinions on mixtures, and occasional artistic flair, they are led with steady farm-born wisdom. They do not just make concrete — they give it personality, healing powers, and, when left unsupervised, possibly a backstory.
+            </p>
         </div>
-
         <div class="group-card">
-            <h4>Sustainable Buildings</h4>
+            <h4>Building Physics and Sustainable Design</h4>
             <img src="building_physics.png" alt="Sustainable Buildings" style="width: 100%; height: 150px; object-fit: cover; border-radius: 5px; margin-bottom: 10px;">
-            <p>This group focuses on sustainable buildings, with themes including energy performance, indoor comfort, and CO2 reduction. Their work addresses the transition to more efficient, comfortable, and lower-carbon buildings and built environments.</p>
+            <p>    Part research unit, part international power trio, this group brings together sharp minds, sustainable ambitions, and enough combined charm to sound like the start of an excellent joke. They tackle energy, comfort, and CO2 reduction with the kind of calm precision that makes overheating buildings and drafty rooms very nervous indeed.
+            </p>
         </div>
-
         <div class="group-card">
             <h4>Geomatics</h4>
             <img src="geomatics.png" alt="Geomatics" style="width: 100%; height: 150px; object-fit: cover; border-radius: 5px; margin-bottom: 10px;">
-            <p>This group works on surveying, UAV flights, spatial data capture, and point cloud processing. Their research includes digital representations of buildings and infrastructure, measurement technologies, and advanced data processing workflows.</p>
+            <p>    Ruled by the legendary twin Maartens — one widely celebrated for his majestic presence, the other affectionately known as the baby professor — the geomatics crew are masters of surveying, drones, point clouds, and making reality look suspiciously well measured. Their ranks are filled with builders, animal enthusiasts, sports fanatics, and people who are far too comfortable operating expensive equipment in fields.
+            </p>
         </div>
     </div>
 </div>
