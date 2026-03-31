@@ -1,9 +1,8 @@
-- rank: 1
-  name: "Alice"
+- name: "Bridge Masters"
+  score: 150
+- name: "Concrete Innovators"
+  score: 120
+- name: "Green Builders"
   score: 100
-- rank: 2
-  name: "Bob"
+- name: "Data Flyers"
   score: 80
-- rank: 3
-  name: "Charlie"
-  score: 60

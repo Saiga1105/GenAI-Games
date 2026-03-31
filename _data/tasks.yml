@@ -1,9 +1,12 @@
 - id: 1
-  description: "Analyze the dataset and find the average value."
+  title: "Footbridge Vibration Analysis"
+  description: "Using the provided vibration data, analyze pedestrian-induced loading patterns and suggest improvements for user comfort. Use generative AI to assist in data interpretation and visualization."
   data_file: "data1.csv"
 - id: 2
-  description: "Classify the images in the zip file."
-  data_file: "images.zip"
-- id: 3
-  description: "Solve the puzzle and submit the solution."
+  title: "Concrete Mix Optimization"
+  description: "Given the material properties, design an optimized self-healing concrete mix. Leverage AI for predictive modeling and sustainability analysis."
   data_file: "puzzle.txt"
+- id: 3
+  title: "Sustainable Building Simulation"
+  description: "Simulate energy performance for a building model. Use AI to optimize indoor comfort and CO2 reduction strategies."
+  data_file: "data1.csv"

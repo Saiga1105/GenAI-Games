@@ -1,92 +1,132 @@
 ---
 layout: home
 author_profile: false
+classes: wide
 ---
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+.hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+.hero p {
+  font-size: 1.5em;
+}
+.btn-hero {
+  background-color: #ff6b6b;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+.section {
+  padding: 60px 0;
+}
+.group-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.group-card h3 {
+  color: #333;
+}
+</style>
 
-<div class="container mt-5">
-  <h1>Welcome to GenAI Games</h1>
-  <p>This is the front page of our website.</p>
-
-  <ul class="nav nav-tabs" id="myTab" role="tablist">
-    <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="subscription-tab" data-bs-toggle="tab" data-bs-target="#subscription" type="button" role="tab" aria-controls="subscription" aria-selected="true">Subscription</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="tasks-tab" data-bs-toggle="tab" data-bs-target="#tasks" type="button" role="tab" aria-controls="tasks" aria-selected="false">Tasks</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="leaderboard-tab" data-bs-toggle="tab" data-bs-target="#leaderboard" type="button" role="tab" aria-controls="leaderboard" aria-selected="false">Leaderboard</button>
-    </li>
-  </ul>
-  <div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade show active" id="subscription" role="tabpanel" aria-labelledby="subscription-tab">
-      <h3>Subscribe</h3>
-      <form action="mailto:contact@genaigames.com?subject=Subscription" method="post" enctype="text/plain">
-        <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control" id="name" name="name" required>
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" name="email" required>
-        </div>
-        <div class="mb-3">
-          <label for="details" class="form-label">Details</label>
-          <textarea class="form-control" id="details" name="details" rows="3"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Subscribe</button>
-      </form>
-    </div>
-    <div class="tab-pane fade" id="tasks" role="tabpanel" aria-labelledby="tasks-tab">
-      <h3>Tasks</h3>
-      {% assign tasks = site.data.tasks %}
-      {% for task in tasks %}
-      <div class="card mb-3">
-        <div class="card-body">
-          <h5 class="card-title">Task {{ task.id }}</h5>
-          <p class="card-text">{{ task.description }}</p>
-          <a href="/assets/data/{{ task.data_file }}" class="btn btn-secondary" download>Download Data</a>
-          <form action="mailto:contact@genaigames.com?subject=Task Submission {{ task.id }}" method="post" enctype="text/plain" class="mt-3">
-            <input type="hidden" name="task_id" value="{{ task.id }}">
-            <div class="mb-3">
-              <label for="user_name_{{ task.id }}" class="form-label">Your Name</label>
-              <input type="text" class="form-control" id="user_name_{{ task.id }}" name="user_name" required>
-            </div>
-            <div class="mb-3">
-              <label for="result_{{ task.id }}" class="form-label">Result</label>
-              <textarea class="form-control" id="result_{{ task.id }}" name="result" rows="3" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-    <div class="tab-pane fade" id="leaderboard" role="tabpanel" aria-labelledby="leaderboard-tab">
-      <h3>Leaderboard</h3>
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Rank</th>
-            <th scope="col">Name</th>
-            <th scope="col">Score</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% assign leaderboard = site.data.leaderboard %}
-          {% for item in leaderboard %}
-          <tr>
-            <th scope="row">{{ item.rank }}</th>
-            <td>{{ item.name }}</td>
-            <td>{{ item.score }}</td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    </div>
+<div class="hero">
+  <div class="container">
+    <h1>GenAI Games</h1>
+    <p>A cross-disciplinary AI challenge for construction researchers</p>
+    <p>17 April | 14:00–17:00 | Followed by a reception</p>
+    <a href="/subscription/" class="btn btn-hero">Register Now</a>
   </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<section class="section">
+  <div class="container">
+    <h2>What is it?</h2>
+    <p>The GenAI Games are an experimental event designed to help researchers explore how generative AI can support their work. In mixed teams, participants will tackle short interdisciplinary challenges using AI tools for reasoning, coding, analysis, communication, and creative problem-solving. The aim is not just to compete, but to discover, test, and learn together.</p>
+  </div>
+</section>
+
+<section class="section" style="background-color: #f8f9fa;">
+  <div class="container">
+    <h2>Why are we doing this?</h2>
+    <p>This event was created to strengthen the uptake of generative AI across our research groups, while encouraging exchange between different domains in construction research. By working through practical challenges together, participants will discover new tools, new workflows, and new ways of thinking across disciplinary boundaries.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Meet the Research Groups</h2>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="group-card">
+          <h3>Dynamics of Footbridges</h3>
+          <p>This group focuses on the dynamic behaviour of footbridges, including vibration performance, pedestrian-induced loading, and structural comfort and safety.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="group-card">
+          <h3>Concrete Compositions and Healing Concretes</h3>
+          <p>This group works on concrete materials, including innovative mix designs and self-healing or healing-enhanced concretes.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="group-card">
+          <h3>Sustainable Buildings</h3>
+          <p>This group focuses on sustainable buildings, with themes including energy performance, indoor comfort, and CO2 reduction.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="group-card">
+          <h3>Geomatics</h3>
+          <p>This group works on surveying, UAV flights, spatial data capture, and point cloud processing.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background-color: #f8f9fa;">
+  <div class="container">
+    <h2>How it Works</h2>
+    <ol>
+      <li>Form mixed teams</li>
+      <li>Solve short AI-based challenges</li>
+      <li>Submit outputs</li>
+      <li>Climb the leaderboard</li>
+      <li>Celebrate afterwards</li>
+    </ol>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Who Should Join?</h2>
+    <p>PhD researchers from the participating groups. No AI expertise required. All levels welcome. Curiosity encouraged.</p>
+  </div>
+</section>
+
+<section class="section" style="background-color: #f8f9fa;">
+  <div class="container">
+    <h2>Event Details</h2>
+    <p><strong>Date:</strong> 17 April</p>
+    <p><strong>Time:</strong> 14:00–17:00</p>
+    <p><strong>Afterwards:</strong> Reception</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container text-center">
+    <h2>Ready to Join?</h2>
+    <a href="/subscription/" class="btn btn-primary btn-lg">Register Now</a>
+  </div>
+</section>
