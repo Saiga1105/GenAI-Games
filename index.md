@@ -353,119 +353,30 @@ document.addEventListener('DOMContentLoaded', function() {
     <strong>Followed by:</strong> Reception</p>
 
     {% endtab %}
-
-    {% tab genai-tabs Content %}
-
-    <h2>Example Tasks</h2>
-    <p>Here are some example tasks to give you an idea of what to expect. These are simplified versions of the challenges you'll face during the event.</p>
-
-    <div class="card mb-4">
-      <div class="card-body">
-        <h5 class="card-title">Example 1: Bridge Vibration Analysis</h5>
-        <p class="card-text">Given vibration data from a footbridge, use AI to identify patterns in pedestrian loading and suggest design modifications for improved comfort. Tools: Python for data analysis, ChatGPT for interpretation.</p>
-        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=250&fit=crop" alt="Bridge analysis" style="width:100%; border-radius:8px;">
-      </div>
-    </div>
-
-    <div class="card mb-4">
-      <div class="card-body">
-        <h5 class="card-title">Example 2: Concrete Mix Design</h5>
-        <p class="card-text">Design a self-healing concrete mix using AI to optimize material properties and sustainability metrics. Use generative AI for creative material combinations.</p>
-        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=250&fit=crop" alt="Concrete mix" style="width:100%; border-radius:8px;">
-      </div>
-    </div>
-
-    <div class="card mb-4">
-      <div class="card-body">
-        <h5 class="card-title">Example 3: Building Energy Simulation</h5>
-        <p class="card-text">Simulate and optimize energy performance of a building model using AI for predictive analysis and design recommendations.</p>
-        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=250&fit=crop" alt="Building simulation" style="width:100%; border-radius:8px;">
-      </div>
-    </div>
-
-    {% endtab %}
-
-    {% tab genai-tabs Subscription %}
-
-    <h1>Register for GenAI Games</h1>
-    <p>Join the first-of-its-kind event bringing together researchers from four different research domains in construction and built-environment research.</p>
-    <p>No advanced AI experience is required. Curiosity matters more than expertise.</p>
-    <div class="text-center">
-      <a href="https://script.google.com/macros/s/AKfycbxXrocTEDpsnn47rlsz_gpA3hxUIm0sB_3mqrPM8D_U7tx5I1tD0jlLDQtXu8-uYGZuyA/exec" class="btn btn-primary btn-lg" target="_blank">Register Now</a>
-    </div>
-
-    {% endtab %}
-
-    {% tab genai-tabs Tasks %}
-
-    <h1>Challenge Tasks</h1>
-    <p>During the event, teams will tackle these short challenges using generative AI tools.</p>
-    {% assign tasks = site.data.tasks %}
-    {% for task in tasks %}
-    <div class="card mb-4">
-      <div class="card-body">
-        <h5 class="card-title">{{ task.title }}</h5>
-        <p class="card-text">{{ task.description }}</p>
-        <a href="/assets/data/{{ task.data_file }}" class="btn btn-secondary" download>Download Data</a>
-        <form action="mailto:maarten.bassier@kuleuven.be?subject=Task Submission {{ task.id }}" method="post" enctype="text/plain" class="mt-3">
-          <input type="hidden" name="task_id" value="{{ task.id }}">
-          <div class="mb-3">
-            <label for="team_name_{{ task.id }}" class="form-label">Team Name</label>
-            <input type="text" class="form-control" id="team_name_{{ task.id }}" name="team_name" required>
-          </div>
-          <div class="mb-3">
-            <label for="result_{{ task.id }}" class="form-label">Submission</label>
-            <textarea class="form-control" id="result_{{ task.id }}" name="result" rows="3" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
-    </div>
-    {% endfor %}
-
-    {% endtab %}
-
-    {% tab genai-tabs Leaderboard %}
-
-    <h1>Live Leaderboard</h1>
-    <p>Track the progress of teams during the GenAI Games.</p>
-    <iframe src="https://docs.google.com/spreadsheets/d/1YOUR_SHEET_ID_HERE/pubhtml?widget=true&amp;headers=false" width="100%" height="600" frameborder="0"></iframe>
-    <p><em>Note: Replace the sheet ID in the iframe src with your actual Google Sheet ID for live updates.</em></p>
-
-    {% endtab %}
-
-    {% endtabs %}
-  </div>
-</section>
-    <ol>
-      <li>Form mixed teams</li>
-      <li>Solve short AI-based challenges</li>
-      <li>Submit outputs</li>
-      <li>Climb the leaderboard</li>
-      <li>Celebrate afterwards</li>
-    </ol>
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <h2>Who Should Join?</h2>
-    <p>PhD researchers from the participating groups. No AI expertise required. All levels welcome. Curiosity encouraged.</p>
-  </div>
-</section>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize Bootstrap tabs
+  var triggerTabList = [].slice.call(document.querySelectorAll('#genaiTabs button'))
+  triggerTabList.forEach(function (triggerEl) {
+    var tabTrigger = new bootstrap.Tab(triggerEl)
+    triggerEl.addEventListener('click', function (event) {
+      event.preventDefault()
+      tabTrigger.show()
+    })
+  })
 
-<section class="section" style="background-color: #f8f9fa;">
-  <div class="container">
-    <h2>Event Details</h2>
-    <p><strong>Date:</strong> 17 April</p>
-    <p><strong>Time:</strong> 14:00–17:00</p>
-    <p><strong>Afterwards:</strong> Reception</p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container text-center">
-    <h2>Ready to Join?</h2>
-    <a href="/subscription/" class="btn btn-primary btn-lg">Register Now</a>
-  </div>
-</section>
+  // Handle URL hash for direct tab linking
+  var hash = window.location.hash;
+  if (hash) {
+    var tabId = hash.substring(1);
+    var tabElement = document.querySelector('button[data-bs-target="#' + tabId + '"]');
+    if (tabElement) {
+      var tab = new bootstrap.Tab(tabElement);
+      tab.show();
+    }
+  }
+});
+</script>
