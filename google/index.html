@@ -153,7 +153,24 @@
       </div>
 
       <div class="section">
-        <h2>4. One real example</h2>
+        <h2>4. What do you use it for?</h2>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="useCases" value="Writing emails / text"> Writing emails / text</label>
+          <label><input type="checkbox" name="useCases" value="Coding / scripting"> Coding / scripting</label>
+          <label><input type="checkbox" name="useCases" value="Data cleaning"> Data cleaning</label>
+          <label><input type="checkbox" name="useCases" value="Data analysis"> Data analysis</label>
+          <label><input type="checkbox" name="useCases" value="Brainstorming"> Brainstorming</label>
+          <label><input type="checkbox" name="useCases" value="Literature review"> Literature review</label>
+          <label><input type="checkbox" name="useCases" value="Figure creation"> Figure creation</label>
+          <label><input type="checkbox" name="useCases" value="Presentation prep"> Presentation prep</label>
+          <label><input type="checkbox" name="useCases" value="Research planning"> Research planning</label>
+          <label><input type="checkbox" name="useCases" value="Admin tasks"> Admin tasks</label>
+          <label><input type="checkbox" name="useCases" value="Teaching support"> Teaching support</label>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>5. One real example</h2>
         <label for="example">What is one thing you have already used GenAI for in your work?</label>
         <textarea id="example" placeholder="Optional"></textarea>
         <p class="small">Keep it short — one concrete example is enough.</p>
@@ -171,6 +188,7 @@
       e.preventDefault();
 
       const tools = [...document.querySelectorAll('input[name="tools"]:checked')].map(el => el.value);
+      const useCases = [...document.querySelectorAll('input[name="useCases"]:checked')].map(el => el.value);
       const level = document.querySelector('input[name="level"]:checked')?.value || "";
 
       const payload = new URLSearchParams();
@@ -180,6 +198,7 @@
       payload.append("attendance", document.getElementById("attendance").value);
       payload.append("level", level);
       payload.append("tools", tools.join(", "));
+      payload.append("useCases", useCases.join(", "));
       payload.append("example", document.getElementById("example").value);
 
       const status = document.getElementById("status");
