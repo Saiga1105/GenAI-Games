@@ -6,7 +6,7 @@ layout: default
     <img src="logo.png" alt="GenAI Games Logo" class="logo">
     <h1>GenAI Games</h1>
     <p>A playful, high-energy research event where PhD researchers from four construction-related research groups compete in mixed teams to solve short challenges using generative AI.</p>
-    <a href="https://script.google.com/macros/s/AKfycbxCoBleob-wSKjMc0T73_w1ayv3pAr-28gYBQ3LTamRQnzKVH7BFWdcJit4HgRbrvRzPg/exec" class="register-btn">Register Now</a>
+    <a href="google/index.html">Register Now</a>
 </div>
 
 <div class="content-section">
