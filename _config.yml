@@ -10,13 +10,4 @@ plugins:
   - jekyll-sitemap
   - jekyll-include-cache
 
-# Navigation
-nav:
-  - title: Home
-    url: /
-  - title: Subscription
-    url: /subscription/
-  - title: Tasks
-    url: /tasks/
-  - title: Leaderboard
-    url: /leaderboard/
+# Navigation removed for single-page tabbed interface
