@@ -3,8 +3,8 @@ layout: default
 ---
 
 <div class="nav-bar">
-    <a href="index.html" class="nav-btn">Home</a>
-    <a href="tasks.html" class="nav-btn">Tasks</a>
+    <a href="../index.html" class="nav-btn">Home</a>
+    <a href="../tasks/tasks.html" class="nav-btn">Tasks</a>
     <a href="leaderboard.html" class="nav-btn">Leaderboard</a>
 </div>
 

@@ -4,12 +4,12 @@ layout: default
 
 <div class="nav-bar">
     <a href="index.html" class="nav-btn">Home</a>
-    <a href="tasks.html" class="nav-btn">Tasks</a>
-    <a href="leaderboard.html" class="nav-btn">Leaderboard</a>
+    <a href="tasks/tasks.html" class="nav-btn">Tasks</a>
+    <a href="leaderboard/leaderboard.html" class="nav-btn">Leaderboard</a>
 </div>
 
 <div class="hero">
-    <img src="logo.png" alt="GenAI Games Logo" class="logo" style="width: 1000px; max-width: 95%; height: auto;">
+    <img src="intro/logo.png" alt="GenAI Games Logo" class="logo" style="width: 1000px; max-width: 95%; height: auto;">
     <h1>GenAI Games</h1>
     <p>A playful, high-energy research event where PhD researchers from four construction-related research groups compete in mixed teams to solve short challenges using generative AI.</p>
     <a href="google/index.html" class="register-btn">Register Now</a>
@@ -45,25 +45,25 @@ layout: default
     <div class="research-groups">
         <div class="group-card">
             <h4>		Structural Mechanics</h4>
-            <img src="dynamics.png" alt="Dynamics of Footbridges" style="width: 100%; height: 300px; object-fit: cover; border-radius: 5px; margin-bottom: 10px;">
+            <img src="intro/dynamics.png" alt="Dynamics of Footbridges" style="width: 100%; height: 300px; object-fit: cover; border-radius: 5px; margin-bottom: 10px;">
             <p>    The noble tribe of mechanics: guardians of vibrating footbridges, seekers of elegant equations, and fearless interpreters of structural chaos. Rumour has it they are powered by Duvel, sustained by elite athleticism, and occasionally distracted by dogs. If something starts wobbling, bouncing, or resonating, they will calmly assure you that this is all part of the science.
             </p>
         </div>
         <div class="group-card">
             <h4>Materials and Constructions</h4>
-            <img src="concrete.png" alt="Concrete Compositions" style="width: 100%; height: 300px; object-fit: cover; border-radius: 5px; margin-bottom: 10px;">
+            <img src="intro/concrete.png" alt="Concrete Compositions" style="width: 100%; height: 300px; object-fit: cover; border-radius: 5px; margin-bottom: 10px;">
             <p>    A colourful clan of makers, experimenters, and concrete whisperers, this group blends scientific rigour with a suspicious amount of creativity. Known for their love of speed, strong opinions on mixtures, and occasional artistic flair, they are led with steady farm-born wisdom. They do not just make concrete — they give it personality, healing powers, and, when left unsupervised, possibly a backstory.
             </p>
         </div>
         <div class="group-card">
             <h4>Building Physics and Sustainable Design</h4>
-            <img src="building_physics.png" alt="Sustainable Buildings" style="width: 100%; height: 300px; object-fit: cover; border-radius: 5px; margin-bottom: 10px;">
+            <img src="intro/building_physics.png" alt="Sustainable Buildings" style="width: 100%; height: 300px; object-fit: cover; border-radius: 5px; margin-bottom: 10px;">
             <p>    Part research unit, part international power trio, this group brings together sharp minds, sustainable ambitions, and enough combined charm to sound like the start of an excellent joke. They tackle energy, comfort, and CO2 reduction with the kind of calm precision that makes overheating buildings and drafty rooms very nervous indeed.
             </p>
         </div>
         <div class="group-card">
             <h4>Geomatics</h4>
-            <img src="geomatics.png" alt="Geomatics" style="width: 100%; height: 300px; object-fit: cover; border-radius: 5px; margin-bottom: 10px;">
+            <img src="intro/geomatics.png" alt="Geomatics" style="width: 100%; height: 300px; object-fit: cover; border-radius: 5px; margin-bottom: 10px;">
             <p>    Ruled by the legendary twin Maartens — one widely celebrated for his majestic presence, the other affectionately known as the baby professor — the geomatics crew are masters of surveying, drones, point clouds, and making reality look suspiciously well measured. Their ranks are filled with builders, animal enthusiasts, sports fanatics, and people who are far too comfortable operating expensive equipment in fields.
             </p>
         </div>

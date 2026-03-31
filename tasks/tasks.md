@@ -3,9 +3,9 @@ layout: default
 ---
 
 <div class="nav-bar">
-    <a href="index.html" class="nav-btn">Home</a>
+    <a href="../index.html" class="nav-btn">Home</a>
     <a href="tasks.html" class="nav-btn">Tasks</a>
-    <a href="leaderboard.html" class="nav-btn">Leaderboard</a>
+    <a href="../leaderboard/leaderboard.html" class="nav-btn">Leaderboard</a>
 </div>
 
 <div class="content-section">
@@ -26,8 +26,8 @@ layout: default
     <h2>Assignments</h2>
     <div class="assignments-grid">
         <div class="card">
-            <img src="logo.png" alt="GenAI Logo" class="card-image">
-            <h3>Assignment 1: Building Physics</h3>
+            <img src="../intro/logo.png" alt="GenAI Logo" class="card-image">
+            <h3><a href="building-physics.html">Assignment 1: Building Physics</a></h3>
             <p>Analyze thermal performance and energy efficiency in building systems using AI-driven simulations.</p>
             <div class="card-buttons">
                 <a href="#" class="download-btn">Download Data</a>
@@ -35,8 +35,8 @@ layout: default
             </div>
         </div>
         <div class="card">
-            <img src="logo.png" alt="GenAI Logo" class="card-image">
-            <h3>Assignment 2: Concrete Materials</h3>
+            <img src="../intro/logo.png" alt="GenAI Logo" class="card-image">
+            <h3><a href="concrete-materials.html">Assignment 2: Concrete Materials</a></h3>
             <p>Optimize concrete mix designs and predict material properties using generative AI models.</p>
             <div class="card-buttons">
                 <a href="#" class="download-btn">Download Data</a>
@@ -44,8 +44,8 @@ layout: default
             </div>
         </div>
         <div class="card">
-            <img src="logo.png" alt="GenAI Logo" class="card-image">
-            <h3>Assignment 3: Structural Dynamics</h3>
+            <img src="../intro/logo.png" alt="GenAI Logo" class="card-image">
+            <h3><a href="structural-dynamics.html">Assignment 3: Structural Dynamics</a></h3>
             <p>Model dynamic responses of structures under various loading conditions with AI assistance.</p>
             <div class="card-buttons">
                 <a href="#" class="download-btn">Download Data</a>
@@ -53,8 +53,8 @@ layout: default
             </div>
         </div>
         <div class="card">
-            <img src="logo.png" alt="GenAI Logo" class="card-image">
-            <h3>Assignment 4: Structural Engineering</h3>
+            <img src="../intro/logo.png" alt="GenAI Logo" class="card-image">
+            <h3><a href="structural-engineering.html">Assignment 4: Structural Engineering</a></h3>
             <p>Design and analyze structural systems using AI-powered optimization techniques.</p>
             <div class="card-buttons">
                 <a href="#" class="download-btn">Download Data</a>
@@ -62,8 +62,8 @@ layout: default
             </div>
         </div>
         <div class="card">
-            <img src="logo.png" alt="GenAI Logo" class="card-image">
-            <h3>Assignment 5: Geotechnical Engineering</h3>
+            <img src="../intro/logo.png" alt="GenAI Logo" class="card-image">
+            <h3><a href="geotechnical-engineering.html">Assignment 5: Geotechnical Engineering</a></h3>
             <p>Predict soil behavior and foundation performance using machine learning models.</p>
             <div class="card-buttons">
                 <a href="#" class="download-btn">Download Data</a>
@@ -71,8 +71,8 @@ layout: default
             </div>
         </div>
         <div class="card">
-            <img src="logo.png" alt="GenAI Logo" class="card-image">
-            <h3>Assignment 6: Environmental Engineering</h3>
+            <img src="../intro/logo.png" alt="GenAI Logo" class="card-image">
+            <h3><a href="environmental-engineering.html">Assignment 6: Environmental Engineering</a></h3>
             <p>Assess environmental impacts and sustainability metrics with AI-driven analysis.</p>
             <div class="card-buttons">
                 <a href="#" class="download-btn">Download Data</a>
