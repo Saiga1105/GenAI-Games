@@ -12,15 +12,7 @@ layout: default
     <img src="intro/logo.png" alt="GenAI Games Logo" class="logo" style="width: 1000px; max-width: 95%; height: auto;">
     <h1>GenAI Games</h1>
     <p>A playful, high-energy research event where PhD researchers from four construction-related research groups compete in mixed teams to solve short challenges using generative AI.</p>
-    <div class="hero-content">
-        <div class="registration-section">
-            <a href="google/index.html" class="register-btn">Register Now</a>
-        </div>
-        <div class="chart-container">
-            <div class="chart-title">Current Registrations by Research Group</div>
-            <canvas id="registrationChart" width="300" height="300"></canvas>
-        </div>
-    </div>
+    <a href="google/index.html" class="register-btn">Register Now</a>
 </div>
 
 <div class="event-details">
