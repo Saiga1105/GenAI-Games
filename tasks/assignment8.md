@@ -90,8 +90,8 @@ layout: default
         <li>Turning spatial data into interpretable engineering outputs</li>
     </ul>
     
-    <h3>Submission</h3>
-    <a href="#" class="submit-btn">Submit Solution & Report</a>
+    <h3>Data and Resources</h3>
+    <p><a href="https://kuleuven-my.sharepoint.com/:u:/g/personal/maarten_bassier_kuleuven_be/IQCDXw9Rk6e8Qq6tNMkCHfLrATOkndTcQFlDHzBR24PHQx4?e=9yt8b8" class="download-btn" target="_blank">Download Point Cloud Dataset</a></p>
     
     <h3>Submission</h3>
     <a href="#" class="submit-btn">Submit Solution & Report</a>
