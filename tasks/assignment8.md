@@ -15,8 +15,11 @@ layout: default
     <h2>Task 8: CHOO CHOO</h2>
     <p><strong>Type:</strong> Technical Coding + Depth + Visualization</p>
     
-    <h3>Goal</h3>
-    <p>Extract railway gauge values along a railway section and visualize whether the gauge is within tolerance at each interval.</p>
+    <div style="text-align: center; margin: 20px 0;">
+        <img src="assignment8/logo2.png" alt="Railway Gauge Reference 1" style="max-width: 100%; height: auto; border: 1px solid #ddd; padding: 10px; border-radius: 5px;">
+        <img src="assignment8/logo3.png" alt="Railway Gauge Reference 2" style="max-width: 100%; height: auto; border: 1px solid #ddd; padding: 10px; border-radius: 5px; margin-top: 15px;">
+        <p style="font-size: 0.9em; color: #666; margin-top: 10px;"><em>Problem reference diagrams and specifications</em></p>
+    </div>
     
     <h3>Brief</h3>
     <p><strong>Focus:</strong> Gauge aspect only. The broader spoor analysis documents are context only.</p>

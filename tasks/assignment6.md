@@ -15,8 +15,11 @@ layout: default
     <h2>Task 6: Good Vibes</h2>
     <p><strong>Type:</strong> Technical Reasoning — Footbridge Dynamics</p>
     
-    <h3>Goal</h3>
-    <p>Solve the footbridge dynamics exercise: determine the fundamental vertical natural frequency, the required TMD mass to reduce the first-mode contribution by a factor of 10, and present the FRF with and without the TMD. The provided slide indicates target answers within about ±5%.</p>
+    <div style="text-align: center; margin: 20px 0;">
+        <img src="assignment6/dynamica1.png" alt="Footbridge Dynamics Reference 1" style="max-width: 100%; height: auto; border: 1px solid #ddd; padding: 10px; border-radius: 5px;">
+        <img src="assignment6/dynamica2.png" alt="Footbridge Dynamics Reference 2" style="max-width: 100%; height: auto; border: 1px solid #ddd; padding: 10px; border-radius: 5px; margin-top: 15px;">
+        <p style="font-size: 0.9em; color: #666; margin-top: 10px;"><em>Problem reference diagrams</em></p>
+    </div>
     
     <h3>Brief</h3>
     <p>Use AI to support structural dynamics reasoning, calculation setup, and interpretation.</p>

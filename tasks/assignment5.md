@@ -15,8 +15,10 @@ layout: default
     <h2>Task 5: Time to Start Cracking</h2>
     <p><strong>Type:</strong> Technical Reasoning — Concrete</p>
     
-    <h3>Goal</h3>
-    <p>Solve the first concrete question only: hydration of Portland cement in a sealed system, including the Powers diagram and the follow-up question on whether further hydration is possible when water becomes available from outside the system.</p>
+    <div style="text-align: center; margin: 20px 0;">
+        <img src="assignment5/beton1.png" alt="Concrete Problem Reference" style="max-width: 100%; height: auto; border: 1px solid #ddd; padding: 10px; border-radius: 5px;">
+        <p style="font-size: 0.9em; color: #666; margin-top: 10px;"><em>Problem reference diagram</em></p>
+    </div>
     
     <h3>Brief</h3>
     <p>Use AI to reason through the hydration problem, organize the required calculations, and explain the physical meaning of the result.</p>
