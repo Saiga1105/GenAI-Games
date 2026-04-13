@@ -23,6 +23,16 @@ layout: default
     <h3>Goal</h3>
     <p>Solve a structural reasoning task on the steel frame in the provided file. Determine the bending moment representation, the vertical reaction at the left support, and the maximum vertical displacement of the horizontal beam.</p>
     
+    <h3>Problem Statement</h3>
+    <p><strong>Material & Design:</strong> All members are steel grade S235, cross-section IPE240</p>
+    
+    <h3>Questions to Solve:</h3>
+    <ol>
+        <li><strong>Bending Moment Diagram:</strong> Give a graphical representation of the bending moments, including the most important values.</li>
+        <li><strong>Vertical Reaction Force:</strong> Determine the vertical reaction force in the left support.</li>
+        <li><strong>Maximum Displacement:</strong> Determine the maximum vertical displacement of the horizontal beam.</li>
+    </ol>
+    
     <h3>Brief</h3>
     <p>Use AI to support your structural reasoning, identify the right formulas and assumptions, and produce a clear engineering answer.</p>
     
@@ -57,14 +67,7 @@ layout: default
         <li>Verification of engineering results</li>
     </ul>
     
-    <h3>How We Did It — Report Required</h3>
-    <p>Your team must report:</p>
-    <ul>
-        <li>Which AI tool you used</li>
-        <li>The main prompt or prompting sequence</li>
-        <li>Whether you asked AI for formulas, steps, or checks</li>
-        <li>What you verified manually</li>
-    </ul>
+   
     
     <h3>Data and Resources</h3>
     <a href="#" class="download-btn">Download Steel Frame Problem</a>

@@ -20,6 +20,22 @@ layout: default
         <p style="font-size: 0.9em; color: #666; margin-top: 10px;"><em>Problem reference diagram</em></p>
     </div>
     
+    <h3>Problem Statement</h3>
+    
+    <h4>1. Hydration of Portland Cement</h4>
+    <p><strong>Part a) Sealed System Hydration:</strong></p>
+    <p>Consider a cement paste consisting of 100 g cement and 37 g water. Draw the corresponding Powers diagram and provide your calculations.</p>
+    
+    <p><strong>Part b) External Water Available:</strong></p>
+    <p>Now assume water becomes available from outside the system after the initial hydration. Can additional cement hydrate, and if so, how much?</p>
+    
+    <h4>2. Concrete Compressive Strength</h4>
+    <p>A concrete element is cast on 'Day 1' in the morning. The cement used is CEM I 52.5 N. At the same time, control cubes (200 mm sides) are made and stored under ideal laboratory conditions.</p>
+    
+    <p><strong>Given:</strong> After 14 days, the average compressive strength of the control cubes is f<sub>cm,cub200,14d</sub> = 48 N/mm²</p>
+    
+    <p><strong>Question:</strong> When will an average compressive strength of f<sub>cm,cub150</sub> = 45 N/mm² be reached on the construction site? (Average daily temperatures provided in a table)</p>
+    
     <h3>Brief</h3>
     <p>Use AI to reason through the hydration problem, organize the required calculations, and explain the physical meaning of the result.</p>
     
@@ -52,15 +68,7 @@ layout: default
         <li>Combining equations with conceptual understanding</li>
         <li>Explaining scientific calculations clearly</li>
     </ul>
-    
-    <h3>How We Did It — Report Required</h3>
-    <p>Your team must report:</p>
-    <ul>
-        <li>How you prompted the AI</li>
-        <li>Whether you asked for stepwise reasoning, diagrams, or interpretation</li>
-        <li>What you checked yourself</li>
-        <li>Whether AI handled the materials science concepts well</li>
-    </ul>
+
     
     <h3>Data and Resources</h3>
     <a href="#" class="download-btn">Download Cement Hydration Problem</a>
