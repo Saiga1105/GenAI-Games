@@ -15,6 +15,23 @@ layout: default
     <h2>Task 7: And Then There Was Light</h2>
     <p><strong>Type:</strong> Coding + Visualization</p>
     
+    <h3>Problem Statement</h3>
+    <p>You have a 3-sensor grid in a small office. Occupied period is 08:00–16:00 over 2 weekdays → 16 occupied hours total.</p>
+    
+    <h4>Workplane Illuminance (lux) at each hour:</h4>
+    <ul>
+        <li><strong>Sensor A:</strong> 120, 180, 260, 310, 410, 520, 610, 480, 220, 190, 280, 330, 390, 450, 510, 470</li>
+        <li><strong>Sensor B:</strong> 90, 140, 210, 240, 290, 310, 360, 340, 130, 110, 200, 260, 300, 320, 330, 310</li>
+        <li><strong>Sensor C:</strong> 40, 60, 80, 110, 150, 180, 210, 190, 50, 70, 90, 120, 140, 160, 180, 170</li>
+    </ul>
+    
+    <h4>Questions to Solve:</h4>
+    <ol>
+        <li><strong>Compute sDA300/50%:</strong> A sensor "passes" if it has ≥300 lux for ≥50% of occupied hours; sDA is the percentage of sensors that pass.</li>
+        <li><strong>Compute ASE1000,250:</strong> Using the dataset, what percentage of sensors experience ≥1000 lux for ≥250 occupied hours? (Note: for this small dataset, this threshold is not met, requiring thoughtful interpretation.)</li>
+        <li><strong>Create a Floor-Plan Map:</strong> Produce a visual map showing which sensor points pass or fail the sDA300/50% criterion.</li>
+    </ol>
+    
     <h3>Goal</h3>
     <p>Compute two daylight metrics and create a simple visual pass/fail floor-plan map.</p>
     
@@ -58,15 +75,7 @@ layout: default
         <li>Translating definitions into computational logic</li>
     </ul>
     
-    <h3>How We Did It — Report Required</h3>
-    <p>Your team must report:</p>
-    <ul>
-        <li>Which environment you used: Python, spreadsheet, notebook, HTML, or other</li>
-        <li>How AI helped with the calculations</li>
-        <li>Whether AI-generated code worked directly or needed debugging</li>
-        <li>What you changed manually</li>
-    </ul>
-    
+
     <h3>Data and Resources</h3>
     <a href="#" class="download-btn">Download Sensor Dataset</a>
     
