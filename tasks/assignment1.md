@@ -9,6 +9,9 @@ layout: default
 </div>
 
 <div class="content-section">
+    <div style="text-align: center; margin-bottom: 30px;">
+        <img src="assignment1/logo.png" alt="Task 1 Logo" style="max-width: 150px; height: auto;">
+    </div>
     <h2>Task 1: Bumbling Baboon</h2>
     <p><strong>Type:</strong> Presentation / Communication</p>
     
@@ -48,15 +51,6 @@ layout: default
         <li>AI for communication and storytelling</li>
         <li>Slide drafting and visual hierarchy</li>
         <li>Concise storytelling and explaining unfamiliar topics quickly</li>
-    </ul>
-    
-    <h3>How We Did It — Report Required</h3>
-    <p>Your team must report:</p>
-    <ul>
-        <li>Which AI tools you used for slide creation, summarization, and visuals</li>
-        <li>What prompts worked best</li>
-        <li>How you checked whether the explanation was correct</li>
-        <li>What part still needed human editing</li>
     </ul>
     
     <h3>Data and Resources</h3>

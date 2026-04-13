@@ -9,6 +9,9 @@ layout: default
 </div>
 
 <div class="content-section">
+    <div style="text-align: center; margin-bottom: 30px;">
+        <img src="assignment2/logo.png" alt="Task 2 Logo" style="max-width: 150px; height: auto;">
+    </div>
     <h2>Task 2: Picasso, Is That You?</h2>
     <p><strong>Type:</strong> Poster / Visual Scientific Communication</p>
     
@@ -60,14 +63,6 @@ layout: default
         <li>Audience-oriented design</li>
     </ul>
     
-    <h3>How We Did It — Report Required</h3>
-    <p>Your team must report:</p>
-    <ul>
-        <li>Which tools you used for layout, design, visuals, icons, and text</li>
-        <li>How you turned raw ideas into poster sections</li>
-        <li>How you decided what to leave out</li>
-        <li>What AI produced well versus poorly</li>
-    </ul>
     
     <h3>Data and Resources</h3>
     <a href="#" class="download-btn">Download Domain Brief</a>

@@ -9,6 +9,9 @@ layout: default
 </div>
 
 <div class="content-section">
+    <div style="text-align: center; margin-bottom: 30px;">
+        <img src="assignment3/logo.png" alt="Task 3 Logo" style="max-width: 150px; height: auto;">
+    </div>
     <h2>Task 3: Into the Blue</h2>
     <p><strong>Type:</strong> Deep Research / Browser / Literature Mapping</p>
     

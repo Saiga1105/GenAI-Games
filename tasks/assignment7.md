@@ -9,6 +9,9 @@ layout: default
 </div>
 
 <div class="content-section">
+    <div style="text-align: center; margin-bottom: 30px;">
+        <img src="assignment7/logo.png" alt="Task 7 Logo" style="max-width: 150px; height: auto;">
+    </div>
     <h2>Task 7: And Then There Was Light</h2>
     <p><strong>Type:</strong> Coding + Visualization</p>
     

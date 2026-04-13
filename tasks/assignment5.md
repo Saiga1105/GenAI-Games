@@ -9,6 +9,9 @@ layout: default
 </div>
 
 <div class="content-section">
+    <div style="text-align: center; margin-bottom: 30px;">
+        <img src="assignment5/logo.png" alt="Task 5 Logo" style="max-width: 150px; height: auto;">
+    </div>
     <h2>Task 5: Time to Start Cracking</h2>
     <p><strong>Type:</strong> Technical Reasoning — Concrete</p>
     

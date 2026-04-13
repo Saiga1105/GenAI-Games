@@ -9,8 +9,16 @@ layout: default
 </div>
 
 <div class="content-section">
+    <div style="text-align: center; margin-bottom: 30px;">
+        <img src="assignment4/logo.png" alt="Task 4 Logo" style="max-width: 150px; height: auto;">
+    </div>
     <h2>Task 4: Just Give Me a Moment</h2>
     <p><strong>Type:</strong> Technical Reasoning — Steel Structure</p>
+    
+    <div style="text-align: center; margin: 20px 0;">
+        <img src="../tasks/staal1.png" alt="Steel Frame Problem" style="max-width: 100%; height: auto; border: 1px solid #ddd; padding: 10px; border-radius: 5px;">
+        <p style="font-size: 0.9em; color: #666; margin-top: 10px;"><em>Problem outline and reference diagram</em></p>
+    </div>
     
     <h3>Goal</h3>
     <p>Solve a structural reasoning task on the steel frame in the provided file. Determine the bending moment representation, the vertical reaction at the left support, and the maximum vertical displacement of the horizontal beam.</p>

@@ -9,6 +9,9 @@ layout: default
 </div>
 
 <div class="content-section">
+    <div style="text-align: center; margin-bottom: 30px;">
+        <img src="assignment8/logo.png" alt="Task 8 Logo" style="max-width: 150px; height: auto;">
+    </div>
     <h2>Task 8: CHOO CHOO</h2>
     <p><strong>Type:</strong> Technical Coding + Depth + Visualization</p>
     

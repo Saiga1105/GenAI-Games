@@ -9,6 +9,9 @@ layout: default
 </div>
 
 <div class="content-section">
+    <div style="text-align: center; margin-bottom: 30px;">
+        <img src="assignment6/logo.png" alt="Task 6 Logo" style="max-width: 150px; height: auto;">
+    </div>
     <h2>Task 6: Good Vibes</h2>
     <p><strong>Type:</strong> Technical Reasoning — Footbridge Dynamics</p>
     
