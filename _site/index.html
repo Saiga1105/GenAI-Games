@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenAI Games</title>
+    <meta name="description" content="A playful, high-energy research event where PhD researchers from four construction-related research groups compete in mixed teams to solve short challenges using generative AI.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .register-btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 20px 0;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .register-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .content-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        h2 {
+            font-size: 2em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            color: #34495e;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .event-details {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .event-details h3 {
+            color: white;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 5px;
+        }
+
+        .research-groups {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .group-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .group-card h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .media-section {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .media-item {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .media-item img, .media-item video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .media-item h4 {
+            margin: 10px 0;
+            color: #2c3e50;
+        }
+
+        .key-message {
+            background: linear-gradient(45deg, #4ECDC4, #44a08d);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .key-message h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .hero {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .research-groups {
+                grid-template-columns: 1fr;
+            }
+
+            .media-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .nav-bar {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .nav-btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 16px;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .leaderboard-table table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .leaderboard-table th, .leaderboard-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .leaderboard-table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        .assignments-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .assignments-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card-image {
+            height: 140px;
+            width: auto;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .card p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .card-buttons {
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+        }
+
+        .download-btn, .submit-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .download-btn {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .submit-btn {
+            background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+            color: white;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+    <a href="index.html" class="nav-btn">Home</a>
+    <a href="tasks/tasks.html" class="nav-btn">Tasks</a>
+    <a href="leaderboard/leaderboard.html" class="nav-btn">Leaderboard</a>
+</div>
+
+<div class="hero">
+    <img src="intro/logo.png" alt="GenAI Games Logo" class="logo" style="width: 1000px; max-width: 95%; height: auto;" />
+    <h1>GenAI Games</h1>
+    <p>A playful, high-energy research event where PhD researchers from four construction-related research groups compete in mixed teams to solve short challenges using generative AI.</p>
+    <a href="google/index.html" class="register-btn">Register Now</a>
+</div>
+
+<div class="event-details">
+    <h3>Event Details</h3>
+    <ul>
+        <li><strong>Date:</strong> 17 April</li>
+        <li><strong>Time:</strong> 14:00–17:00</li>
+        <li><strong>Afterwards:</strong> Reception</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h2>What is it?</h2>
+    <p>The GenAI Games are a first-of-their-kind internal event bringing together researchers from four different research domains in construction and built-environment research. During the event, participants are split into mixed teams and challenged to solve short, compartmentalized tasks using generative AI tools only. It is about:</p>
+    <ul>
+        <li>experimenting with AI in a hands-on way</li>
+        <li>learning from colleagues in other domains</li>
+        <li>discovering practical research use cases</li>
+        <li>building confidence with GenAI tools</li>
+        <li>encouraging cross-disciplinary thinking</li>
+    </ul>
+
+    <p>The event should feel like a mix between a research sprint, a friendly competition, an AI playground, and a cross-domain innovation workshop.</p>
+</div>
+
+<div class="content-section">
+    <h2>Participating Research Groups</h2>
+    <div class="research-groups">
+        <div class="group-card">
+            <h4>		Structural Mechanics</h4>
+            <img src="intro/dynamics.png" alt="Dynamics of Footbridges" style="width: 100%; height: 300px; object-fit: cover; border-radius: 5px; margin-bottom: 10px;" />
+            <p>    The noble tribe of mechanics: guardians of vibrating footbridges, seekers of elegant equations, and fearless interpreters of structural chaos. Rumour has it they are powered by Duvel, sustained by elite athleticism, and occasionally distracted by dogs. If something starts wobbling, bouncing, or resonating, they will calmly assure you that this is all part of the science.
+            </p>
+        </div>
+        <div class="group-card">
+            <h4>Materials and Constructions</h4>
+            <img src="intro/concrete.png" alt="Concrete Compositions" style="width: 100%; height: 300px; object-fit: cover; border-radius: 5px; margin-bottom: 10px;" />
+            <p>    A colourful clan of makers, experimenters, and concrete whisperers, this group blends scientific rigour with a suspicious amount of creativity. Known for their love of speed, strong opinions on mixtures, and occasional artistic flair, they are led with steady farm-born wisdom. They do not just make concrete — they give it personality, healing powers, and, when left unsupervised, possibly a backstory.
+            </p>
+        </div>
+        <div class="group-card">
+            <h4>Building Physics and Sustainable Design</h4>
+            <img src="intro/building_physics.png" alt="Sustainable Buildings" style="width: 100%; height: 300px; object-fit: cover; border-radius: 5px; margin-bottom: 10px;" />
+            <p>    Part research unit, part international power trio, this group brings together sharp minds, sustainable ambitions, and enough combined charm to sound like the start of an excellent joke. They tackle energy, comfort, and CO2 reduction with the kind of calm precision that makes overheating buildings and drafty rooms very nervous indeed.
+            </p>
+        </div>
+        <div class="group-card">
+            <h4>Geomatics</h4>
+            <img src="intro/geomatics.png" alt="Geomatics" style="width: 100%; height: 300px; object-fit: cover; border-radius: 5px; margin-bottom: 10px;" />
+            <p>    Ruled by the legendary twin Maartens — one widely celebrated for his majestic presence, the other affectionately known as the baby professor — the geomatics crew are masters of surveying, drones, point clouds, and making reality look suspiciously well measured. Their ranks are filled with builders, animal enthusiasts, sports fanatics, and people who are far too comfortable operating expensive equipment in fields.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="content-section">
+    <h2>Main Goals of the Event</h2>
+    <ol>
+        <li><strong>Increase AI uptake in research practice</strong><br />The event is meant to help researchers discover how generative AI can support real work in their own research domain.</li>
+        <li><strong>Learn by doing</strong><br />Rather than a lecture or demo, the GenAI Games are built around hands-on experimentation.</li>
+        <li><strong>Cross-pollinate between research groups</strong><br />Participants will work in mixed teams, encouraging knowledge exchange between domains that do not always interact closely.</li>
+        <li><strong>Explore new use cases</strong><br />The challenges are designed to reveal new ways AI can be used for analysis, communication, coding, problem framing, decision support, and interdisciplinary thinking.</li>
+        <li><strong>Build a shared culture of critical AI use</strong><br />The event should encourage both creativity and reflection: using AI boldly, but also checking, verifying, and thinking critically.</li>
+    </ol>
+</div>
+
+<div class="content-section">
+    <h2>What Happens During the Event</h2>
+    <p>Participants will be divided into mixed teams and take on a series of short challenge rounds. Each round presents a different problem inspired by one or more of the participating research domains. Teams must use generative AI tools to solve the task, produce an output, and submit their answer to the live leaderboard.</p>
+
+    <p>Challenges may involve:</p>
+    <ul>
+        <li>technical reasoning</li>
+        <li>data interpretation</li>
+        <li>coding and scripting</li>
+        <li>prompt engineering</li>
+        <li>communication and pitching</li>
+        <li>interdisciplinary problem-solving</li>
+    </ul>
+
+    <p>The format is fast-paced, playful, and collaborative.</p>
+</div>
+
+    </div>
+</body>
+</html>

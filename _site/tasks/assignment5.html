@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenAI Games</title>
+    <meta name="description" content="A playful, high-energy research event where PhD researchers from four construction-related research groups compete in mixed teams to solve short challenges using generative AI.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .register-btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 20px 0;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .register-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .content-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        h2 {
+            font-size: 2em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            color: #34495e;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .event-details {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .event-details h3 {
+            color: white;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 5px;
+        }
+
+        .research-groups {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .group-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .group-card h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .media-section {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .media-item {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .media-item img, .media-item video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .media-item h4 {
+            margin: 10px 0;
+            color: #2c3e50;
+        }
+
+        .key-message {
+            background: linear-gradient(45deg, #4ECDC4, #44a08d);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .key-message h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .hero {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .research-groups {
+                grid-template-columns: 1fr;
+            }
+
+            .media-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .nav-bar {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .nav-btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 16px;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .leaderboard-table table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .leaderboard-table th, .leaderboard-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .leaderboard-table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        .assignments-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .assignments-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card-image {
+            height: 140px;
+            width: auto;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .card p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .card-buttons {
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+        }
+
+        .download-btn, .submit-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .download-btn {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .submit-btn {
+            background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+            color: white;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+    <a href="../index.html" class="nav-btn">Home</a>
+    <a href="tasks.html" class="nav-btn">Tasks</a>
+    <a href="../leaderboard/leaderboard.html" class="nav-btn">Leaderboard</a>
+</div>
+
+<div class="content-section">
+    <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px;">
+        <div>
+            <h2 style="margin: 0;">Task 5: Time to Start Cracking</h2>
+            <p style="margin: 5px 0 0 0;"><strong>Type:</strong> Technical Reasoning — Concrete</p>
+        </div>
+        <img src="assignment5/logo.png" alt="Task 5 Logo" style="width: 200px; height: auto; flex-shrink: 0;" />
+    </div>
+    
+    <div style="text-align: center; margin: 20px 0;">
+        <img src="assignment5/beton1.png" alt="Concrete Problem Reference" style="max-width: 100%; height: auto; border: 1px solid #ddd; padding: 10px; border-radius: 5px;" />
+        <p style="font-size: 0.9em; color: #666; margin-top: 10px;"><em>Problem reference diagram</em></p>
+    </div>
+    <h3>Brief</h3>
+    <p>Use AI to reason through the hydration problem, organize the required calculations, and explain the physical meaning of the result.</p>
+    <h3>Problem Statement</h3>
+    
+    <h4>1. Hydration of Portland Cement</h4>
+    <p><strong>Part a) Sealed System Hydration:</strong></p>
+    <p>Consider a cement paste consisting of 100 g cement and 37 g water. Draw the corresponding Powers diagram and provide your calculations.</p>
+    
+    <p><strong>Part b) External Water Available:</strong></p>
+    <p>Now assume water becomes available from outside the system after the initial hydration. Can additional cement hydrate, and if so, how much?</p>
+    
+    <h4>2. Concrete Compressive Strength</h4>
+    <p>A concrete element is cast on 'Day 1' in the morning. The cement used is CEM I 52.5 N. At the same time, control cubes (200 mm sides) are made and stored under ideal laboratory conditions.</p>
+    
+    <p><strong>Given:</strong> After 14 days, the average compressive strength of the control cubes is f<sub>cm,cub200,14d</sub> = 48 N/mm²</p>
+    
+    <p><strong>Question:</strong> When will an average compressive strength of f<sub>cm,cub150</sub> = 45 N/mm² be reached on the construction site? (Average daily temperatures provided in a table)</p>
+    
+    
+    
+
+    
+    <h3>Deliverables</h3>
+    <ul>
+        <li>Final answer</li>
+        <li>Short explanation of the reasoning</li>
+        <li>"How we did it" documentation</li>
+    </ul>
+    
+    <h3>Scoring Criteria</h3>
+    <ul>
+        <li><strong>Correctness:</strong> Is the answer accurate?</li>
+        <li><strong>Clarity:</strong> Is the explanation clear?</li>
+        <li><strong>Reasoning Quality:</strong> Is the logic sound?</li>
+    </ul>
+    
+    <h3>What It Teaches</h3>
+    <ul>
+        <li>AI for materials science reasoning</li>
+        <li>Combining equations with conceptual understanding</li>
+        <li>Explaining scientific calculations clearly</li>
+    </ul>
+
+    
+    
+    <h3>Submission</h3>
+    <a href="#" class="submit-btn">Submit Solution &amp; Report</a>
+</div>
+
+    </div>
+</body>
+</html>

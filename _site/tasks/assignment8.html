@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenAI Games</title>
+    <meta name="description" content="A playful, high-energy research event where PhD researchers from four construction-related research groups compete in mixed teams to solve short challenges using generative AI.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .register-btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 20px 0;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .register-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .content-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        h2 {
+            font-size: 2em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            color: #34495e;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .event-details {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .event-details h3 {
+            color: white;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 5px;
+        }
+
+        .research-groups {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .group-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .group-card h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .media-section {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .media-item {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .media-item img, .media-item video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .media-item h4 {
+            margin: 10px 0;
+            color: #2c3e50;
+        }
+
+        .key-message {
+            background: linear-gradient(45deg, #4ECDC4, #44a08d);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .key-message h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .hero {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .research-groups {
+                grid-template-columns: 1fr;
+            }
+
+            .media-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .nav-bar {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .nav-btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 16px;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .leaderboard-table table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .leaderboard-table th, .leaderboard-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .leaderboard-table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        .assignments-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .assignments-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card-image {
+            height: 140px;
+            width: auto;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .card p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .card-buttons {
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+        }
+
+        .download-btn, .submit-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .download-btn {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .submit-btn {
+            background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+            color: white;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+    <a href="../index.html" class="nav-btn">Home</a>
+    <a href="tasks.html" class="nav-btn">Tasks</a>
+    <a href="../leaderboard/leaderboard.html" class="nav-btn">Leaderboard</a>
+</div>
+
+<div class="content-section">
+    <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px;">
+        <div>
+            <h2 style="margin: 0;">Task 8: CHOO CHOO</h2>
+            <p style="margin: 5px 0 0 0;"><strong>Type:</strong> Technical Coding + Depth + Visualization</p>
+        </div>
+        <img src="assignment8/logo.png" alt="Task 8 Logo" style="width: 200px; height: auto; flex-shrink: 0;" />
+    </div>
+    
+    <h3>Problem Statement</h3>
+    <p><strong>Context:</strong> Railway gauge analysis based on point cloud survey data. Reference: <a href="https://infrabel.be/sites/default/files/wysiwyg-files/Bundel-32.pdf" target="_blank">Infrabel Bundle 32 (Technical Specifications)</a></p>
+    
+    <h4>Question 1: Gauge Measurement</h4>
+    <p>Extract the gauge parameter (distance between the two rails) at regular intervals of <strong>every 0.5 m</strong> along the measured section. Provide the extracted gauge values and document your methodology.</p>
+    
+    <h4>Question 2: Tolerance Compliance Visualization</h4>
+    <p>Create a visualization showing:</p>
+    <ul>
+        <li>Which measurement points are <strong>within tolerance</strong> (shown in green)</li>
+        <li>Which measurement points are <strong>out of tolerance</strong> (shown in red)</li>
+        <li>The tolerance corridor boundaries</li>
+        <li>Distance along the track on the x-axis</li>
+    </ul>
+    <p>This visualization should clearly communicate where maintenance or track correction is needed.</p>
+    
+    <div style="text-align: center; margin: 20px 0;">
+        <img src="assignment8/logo2.png" alt="Railway Gauge Reference 1" style="max-width: 100%; height: auto; border: 1px solid #ddd; padding: 10px; border-radius: 5px;" />
+        <img src="assignment8/logo3.png" alt="Railway Gauge Reference 2" style="max-width: 100%; height: auto; border: 1px solid #ddd; padding: 10px; border-radius: 5px; margin-top: 15px;" />
+        <p style="font-size: 0.9em; color: #666; margin-top: 10px;"><em>Problem reference diagrams and specifications</em></p>
+    </div>
+    
+    <h3>Brief</h3>
+    <p><strong>Focus:</strong> Gauge aspect only. The broader spoor analysis documents are context only.</p>
+    
+    <p>The original railway exercise covers many analyses (scanner accuracy, slope, centerline, cant), but for this task you only work on gauge extraction and compliance visualization.</p>
+    
+    <p>Teams are given:</p>
+    <ul>
+        <li>Point cloud dataset</li>
+        <li>Relevant specification excerpt</li>
+        <li>Presentation showing the gauge location</li>
+    </ul>
+    
+    <p>Use AI to help design and implement a workflow that:</p>
+    <ul>
+        <li>Extracts the gauge parameter every 0.5 m</li>
+        <li>Compares each value to tolerance</li>
+        <li>Visualizes whether each location is in or out of tolerance</li>
+    </ul>
+    
+    <h3>Rules</h3>
+    <ul>
+        <li>Focus on gauge only</li>
+        <li>Emphasize both technical depth and clear visualization</li>
+        <li>Backend code and visual output are both part of the challenge</li>
+        <li>Teams may simplify the pipeline if they explain their assumptions</li>
+    </ul>
+    
+    <h3>Deliverables</h3>
+    <ul>
+        <li>Extracted gauge values</li>
+        <li>Tolerance classification</li>
+        <li>Visualization along the section</li>
+        <li>"How we did it" documentation</li>
+    </ul>
+    
+    <h3>Scoring Criteria</h3>
+    <ul>
+        <li><strong>Technical Depth:</strong> Is the approach sound and sophisticated?</li>
+        <li><strong>Correctness:</strong> Are calculations and logic correct?</li>
+        <li><strong>Visualization Quality:</strong> Is the output clear and readable?</li>
+        <li><strong>Robustness:</strong> Is the workflow well-structured?</li>
+    </ul>
+    
+    <h3>What It Teaches</h3>
+    <ul>
+        <li>AI for pipeline design</li>
+        <li>AI for code generation and debugging</li>
+        <li>AI for linking standards/specifications to data workflows</li>
+        <li>Turning spatial data into interpretable engineering outputs</li>
+    </ul>
+    
+    <h3>Data and Resources</h3>
+    <p><a href="https://kuleuven-my.sharepoint.com/:u:/g/personal/maarten_bassier_kuleuven_be/IQCDXw9Rk6e8Qq6tNMkCHfLrATOkndTcQFlDHzBR24PHQx4?e=9yt8b8" class="download-btn" target="_blank">Download Point Cloud Dataset</a></p>
+    
+    <h3>Submission</h3>
+    <a href="#" class="submit-btn">Submit Solution &amp; Report</a>
+</div>
+
+    </div>
+</body>
+</html>
