@@ -9,74 +9,102 @@ layout: default
 </div>
 
 <div class="content-section">
-    <h2>Tasks</h2>
+    <h2>GenAI Games — Tasks & Submission Rules</h2>
     <p>Here you will find information about the challenges, data downloads, and submission guidelines for the GenAI Games.</p>
     
-    <h3>Challenge Rounds</h3>
-    <p>Participants will compete in multiple short challenge rounds. Each round presents a different problem inspired by construction and built-environment research domains.</p>
+    <h3>General Submission Rules for All Tasks</h3>
+    <p><strong>Each team submission must include:</strong></p>
+    <ul>
+        <li><strong>Team name</strong></li>
+        <li><strong>Main output</strong> (the solution/deliverable)</li>
+        <li><strong>How we did it</strong> — This is important! The goal is not only to solve the task, but also to <strong>learn how different AI approaches work</strong></li>
+        <li><strong>AI tools used</strong> — Which tools did you employ?</li>
+        <li><strong>Main prompt or workflow</strong> — What did you ask the AI to do?</li>
+        <li><strong>What we checked manually</strong> — Did you verify the AI output?</li>
+        <li><strong>Where AI helped most</strong> — Which part of the task did AI solve best?</li>
+        <li><strong>Confidence level: 1–5</strong> — How confident are you in your solution?</li>
+    </ul>
     
-    <h3>Data Downloads</h3>
-    <p>Relevant datasets and materials will be made available here during the event.</p>
-    
-    <h3>Submissions</h3>
-    <p>Teams must submit their solutions through the designated submission portal. Details will be provided on the day of the event.</p>
+    <p><strong>Global Reflection Question (Add to every submission):</strong></p>
+    <div style="background: #f0f0f0; padding: 15px; border-radius: 8px; margin: 15px 0;">
+        <p><em>"What would you reuse from this AI workflow in your real research?"</em></p>
+        <p style="font-size: 0.9em; color: #666;">This helps us understand how the GenAI Games can drive real uptake of AI in research practice.</p>
+    </div>
 </div>
 
 <div class="assignments-section">
-    <h2>Assignments</h2>
+    <h2>8 Challenges</h2>
     <div class="assignments-grid">
         <div class="card">
             <img src="assignment1/logo.png" alt="GenAI Logo" class="card-image">
-            <h3><a href="assignment1.html">Assignment 1: Building Physics</a></h3>
-            <p>Analyze thermal performance and energy efficiency in building systems using AI-driven simulations.</p>
+            <h3><a href="assignment1.html">Task 1: Bumbling Baboon</a></h3>
+            <p><strong>Type:</strong> Presentation / Communication<br>Create a 5-minute presentation on another group's research topic using AI.</p>
             <div class="card-buttons">
-                <a href="#" class="download-btn">Download Data</a>
-                <a href="#" class="submit-btn">Submit Solution</a>
+                <a href="#" class="download-btn">Download Brief</a>
+                <a href="#" class="submit-btn">Submit</a>
             </div>
         </div>
         <div class="card">
             <img src="assignment2/logo.png" alt="GenAI Logo" class="card-image">
-            <h3><a href="assignment2.html">Assignment 2: Concrete Materials</a></h3>
-            <p>Optimize concrete mix designs and predict material properties using generative AI models.</p>
+            <h3><a href="assignment2.html">Task 2: Picasso, Is That You?</a></h3>
+            <p><strong>Type:</strong> Poster / Visual Communication<br>Create an A1 research poster introducing a Ghent research domain.</p>
             <div class="card-buttons">
-                <a href="#" class="download-btn">Download Data</a>
-                <a href="#" class="submit-btn">Submit Solution</a>
+                <a href="#" class="download-btn">Download Brief</a>
+                <a href="#" class="submit-btn">Submit</a>
             </div>
         </div>
         <div class="card">
             <img src="assignment3/logo.png" alt="GenAI Logo" class="card-image">
-            <h3><a href="assignment3.html">Assignment 3: Structural Dynamics</a></h3>
-            <p>Model dynamic responses of structures under various loading conditions with AI assistance.</p>
+            <h3><a href="assignment3.html">Task 3: Into the Blue</a></h3>
+            <p><strong>Type:</strong> Research / Literature Mapping<br>Produce a one-page literature scan on a narrowly scoped research question.</p>
             <div class="card-buttons">
-                <a href="#" class="download-btn">Download Data</a>
-                <a href="#" class="submit-btn">Submit Solution</a>
+                <a href="#" class="download-btn">Download Brief</a>
+                <a href="#" class="submit-btn">Submit</a>
             </div>
         </div>
         <div class="card">
             <img src="assignment4/logo.png" alt="GenAI Logo" class="card-image">
-            <h3><a href="assignment4.html">Assignment 4: Structural Engineering</a></h3>
-            <p>Design and analyze structural systems using AI-powered optimization techniques.</p>
+            <h3><a href="assignment4.html">Task 4: Just Give Me a Moment</a></h3>
+            <p><strong>Type:</strong> Technical Reasoning (Steel)<br>Solve a structural steel frame problem using AI support.</p>
             <div class="card-buttons">
-                <a href="#" class="download-btn">Download Data</a>
-                <a href="#" class="submit-btn">Submit Solution</a>
+                <a href="#" class="download-btn">Download Brief</a>
+                <a href="#" class="submit-btn">Submit</a>
             </div>
         </div>
         <div class="card">
             <img src="assignment5/logo.png" alt="GenAI Logo" class="card-image">
-            <h3><a href="assignment5.html">Assignment 5: Geotechnical Engineering</a></h3>
-            <p>Predict soil behavior and foundation performance using machine learning models.</p>
+            <h3><a href="assignment5.html">Task 5: Time to Start Cracking</a></h3>
+            <p><strong>Type:</strong> Technical Reasoning (Concrete)<br>Solve a cement hydration problem using AI reasoning.</p>
             <div class="card-buttons">
-                <a href="#" class="download-btn">Download Data</a>
-                <a href="#" class="submit-btn">Submit Solution</a>
+                <a href="#" class="download-btn">Download Brief</a>
+                <a href="#" class="submit-btn">Submit</a>
             </div>
         </div>
         <div class="card">
             <img src="assignment6/logo.png" alt="GenAI Logo" class="card-image">
-            <h3><a href="assignment6.html">Assignment 6: Environmental Engineering</a></h3>
-            <p>Assess environmental impacts and sustainability metrics with AI-driven analysis.</p>
+            <h3><a href="assignment6.html">Task 6: Good Vibes</a></h3>
+            <p><strong>Type:</strong> Technical Reasoning (Dynamics)<br>Solve a footbridge vibration problem with TMD design.</p>
             <div class="card-buttons">
-                <a href="#" class="download-btn">Download Data</a>
-                <a href="#" class="submit-btn">Submit Solution</a>
+                <a href="#" class="download-btn">Download Brief</a>
+                <a href="#" class="submit-btn">Submit</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="assignment7/logo.png" alt="GenAI Logo" class="card-image">
+            <h3><a href="assignment7.html">Task 7: And Then There Was Light</a></h3>
+            <p><strong>Type:</strong> Coding + Visualization<br>Compute daylight metrics and create a pass/fail floor-plan visualization.</p>
+            <div class="card-buttons">
+                <a href="#" class="download-btn">Download Brief</a>
+                <a href="#" class="submit-btn">Submit</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="assignment8/logo.png" alt="GenAI Logo" class="card-image">
+            <h3><a href="assignment8.html">Task 8: CHOO CHOO</a></h3>
+            <p><strong>Type:</strong> Advanced Coding + Depth<br>Extract railway gauge values and visualize tolerance compliance.</p>
+            <div class="card-buttons">
+                <a href="#" class="download-btn">Download Brief</a>
+                <a href="#" class="submit-btn">Submit</a>
             </div>
         </div>
     </div>
