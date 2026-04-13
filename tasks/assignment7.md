@@ -9,11 +9,13 @@ layout: default
 </div>
 
 <div class="content-section">
-    <div style="text-align: center; margin-bottom: 30px;">
-        <img src="assignment7/logo.png" alt="Task 7 Logo" style="max-width: 150px; height: auto;">
+    <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px;">
+        <div>
+            <h2 style="margin: 0;">Task 7: And Then There Was Light</h2>
+            <p style="margin: 5px 0 0 0;"><strong>Type:</strong> Coding + Visualization</p>
+        </div>
+        <img src="assignment7/logo.png" alt="Task 7 Logo" style="width: 200px; height: auto; flex-shrink: 0;">
     </div>
-    <h2>Task 7: And Then There Was Light</h2>
-    <p><strong>Type:</strong> Coding + Visualization</p>
     
     <h3>Problem Statement</h3>
     <p>You have a 3-sensor grid in a small office. Occupied period is 08:00–16:00 over 2 weekdays → 16 occupied hours total.</p>
@@ -74,10 +76,6 @@ layout: default
         <li>AI for visualizing technical outcomes</li>
         <li>Translating definitions into computational logic</li>
     </ul>
-    
-
-    <h3>Data and Resources</h3>
-    <a href="#" class="download-btn">Download Sensor Dataset</a>
     
     <h3>Submission</h3>
     <a href="#" class="submit-btn">Submit Solution & Report</a>

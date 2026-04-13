@@ -9,11 +9,13 @@ layout: default
 </div>
 
 <div class="content-section">
-    <div style="text-align: center; margin-bottom: 30px;">
-        <img src="assignment6/logo.png" alt="Task 6 Logo" style="max-width: 150px; height: auto;">
+    <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px;">
+        <div>
+            <h2 style="margin: 0;">Task 6: Good Vibes</h2>
+            <p style="margin: 5px 0 0 0;"><strong>Type:</strong> Technical Reasoning — Footbridge Dynamics</p>
+        </div>
+        <img src="assignment6/logo.png" alt="Task 6 Logo" style="width: 200px; height: auto; flex-shrink: 0;">
     </div>
-    <h2>Task 6: Good Vibes</h2>
-    <p><strong>Type:</strong> Technical Reasoning — Footbridge Dynamics</p>
     
     <div style="text-align: center; margin: 20px 0;">
         <img src="assignment6/dynamica1.png" alt="Footbridge Dynamics Reference 1" style="max-width: 100%; height: auto; border: 1px solid #ddd; padding: 10px; border-radius: 5px;">
@@ -33,13 +35,6 @@ layout: default
     
     <h3>Brief</h3>
     <p>Use AI to support structural dynamics reasoning, calculation setup, and interpretation.</p>
-    
-    <h3>Rules</h3>
-    <ul>
-        <li>No coding required</li>
-        <li>Focus on reasoning and engineering structure</li>
-        <li>Final answer must include both values and explanation</li>
-    </ul>
     
     <h3>Deliverables</h3>
     <ul>
@@ -65,9 +60,6 @@ layout: default
         <li>Identifying where AI is reliable or unreliable in advanced mechanics</li>
     </ul>
     
-    
-    <h3>Data and Resources</h3>
-    <a href="#" class="download-btn">Download Footbridge Problem</a>
     
     <h3>Submission</h3>
     <a href="#" class="submit-btn">Submit Solution & Report</a>

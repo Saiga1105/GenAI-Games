@@ -39,8 +39,7 @@ layout: default
             <h3><a href="assignment1.html">Task 1: Bumbling Baboon</a></h3>
             <p><strong>Type:</strong> Presentation / Communication<br>Create a 5-minute presentation on another group's research topic using AI.</p>
             <div class="card-buttons">
-                <a href="#" class="download-btn">Download Brief</a>
-                <a href="#" class="submit-btn">Submit</a>
+                <a href="assignment1.html" class="submit-btn">View & Submit</a>
             </div>
         </div>
         <div class="card">
@@ -48,8 +47,7 @@ layout: default
             <h3><a href="assignment2.html">Task 2: Picasso, Is That You?</a></h3>
             <p><strong>Type:</strong> Poster / Visual Communication<br>Create an A1 research poster introducing a Ghent research domain.</p>
             <div class="card-buttons">
-                <a href="#" class="download-btn">Download Brief</a>
-                <a href="#" class="submit-btn">Submit</a>
+                <a href="assignment2.html" class="submit-btn">View & Submit</a>
             </div>
         </div>
         <div class="card">
@@ -58,8 +56,7 @@ layout: default
             <p><strong>Type:</strong> Research / Literature Mapping<br>Produce a one-page literature scan on a narrowly scoped research question.</p>
             <div class="card-buttons">
                 <a href="#" class="download-btn">Download Brief</a>
-                <a href="#" class="submit-btn">Submit</a>
-            </div>
+                <a href="assignment3.html" class="submit-btn">View & 
         </div>
         <div class="card">
             <img src="assignment4/logo.png" alt="GenAI Logo" class="card-image">
@@ -67,8 +64,7 @@ layout: default
             <p><strong>Type:</strong> Technical Reasoning (Steel)<br>Solve a structural steel frame problem using AI support.</p>
             <div class="card-buttons">
                 <a href="#" class="download-btn">Download Brief</a>
-                <a href="#" class="submit-btn">Submit</a>
-            </div>
+                <a href="assignment4.html" class="submit-btn">View & 
         </div>
         <div class="card">
             <img src="assignment5/logo.png" alt="GenAI Logo" class="card-image">
@@ -77,8 +73,7 @@ layout: default
             <div class="card-buttons">
                 <a href="#" class="download-btn">Download Brief</a>
                 <a href="#" class="submit-btn">Submit</a>
-            </div>
-        </div>
+            </div>assignment5.html" class="submit-btn">View & 
         <div class="card">
             <img src="assignment6/logo.png" alt="GenAI Logo" class="card-image">
             <h3><a href="assignment6.html">Task 6: Good Vibes</a></h3>
@@ -86,8 +81,7 @@ layout: default
             <div class="card-buttons">
                 <a href="#" class="download-btn">Download Brief</a>
                 <a href="#" class="submit-btn">Submit</a>
-            </div>
-        </div>
+            </div>assignment6.html" class="submit-btn">View & 
         <div class="card">
             <img src="assignment7/logo.png" alt="GenAI Logo" class="card-image">
             <h3><a href="assignment7.html">Task 7: And Then There Was Light</a></h3>
@@ -95,8 +89,7 @@ layout: default
             <div class="card-buttons">
                 <a href="#" class="download-btn">Download Brief</a>
                 <a href="#" class="submit-btn">Submit</a>
-            </div>
-        </div>
+            </div>assignment7.html" class="submit-btn">View & 
         <div class="card">
             <img src="assignment8/logo.png" alt="GenAI Logo" class="card-image">
             <h3><a href="assignment8.html">Task 8: CHOO CHOO</a></h3>
@@ -105,6 +98,5 @@ layout: default
                 <a href="#" class="download-btn">Download Brief</a>
                 <a href="#" class="submit-btn">Submit</a>
             </div>
-        </div>
-    </div>
+        </div>assignment8.html" class="submit-btn">View & 
 </div>

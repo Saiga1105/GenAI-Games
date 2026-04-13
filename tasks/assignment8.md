@@ -9,11 +9,29 @@ layout: default
 </div>
 
 <div class="content-section">
-    <div style="text-align: center; margin-bottom: 30px;">
-        <img src="assignment8/logo.png" alt="Task 8 Logo" style="max-width: 150px; height: auto;">
+    <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px;">
+        <div>
+            <h2 style="margin: 0;">Task 8: CHOO CHOO</h2>
+            <p style="margin: 5px 0 0 0;"><strong>Type:</strong> Technical Coding + Depth + Visualization</p>
+        </div>
+        <img src="assignment8/logo.png" alt="Task 8 Logo" style="width: 200px; height: auto; flex-shrink: 0;">
     </div>
-    <h2>Task 8: CHOO CHOO</h2>
-    <p><strong>Type:</strong> Technical Coding + Depth + Visualization</p>
+    
+    <h3>Problem Statement</h3>
+    <p><strong>Context:</strong> Railway gauge analysis based on point cloud survey data. Reference: <a href="https://infrabel.be/sites/default/files/wysiwyg-files/Bundel-32.pdf" target="_blank">Infrabel Bundle 32 (Technical Specifications)</a></p>
+    
+    <h4>Question 1: Gauge Measurement</h4>
+    <p>Extract the gauge parameter (distance between the two rails) at regular intervals of <strong>every 0.5 m</strong> along the measured section. Provide the extracted gauge values and document your methodology.</p>
+    
+    <h4>Question 2: Tolerance Compliance Visualization</h4>
+    <p>Create a visualization showing:</p>
+    <ul>
+        <li>Which measurement points are <strong>within tolerance</strong> (shown in green)</li>
+        <li>Which measurement points are <strong>out of tolerance</strong> (shown in red)</li>
+        <li>The tolerance corridor boundaries</li>
+        <li>Distance along the track on the x-axis</li>
+    </ul>
+    <p>This visualization should clearly communicate where maintenance or track correction is needed.</p>
     
     <div style="text-align: center; margin: 20px 0;">
         <img src="assignment8/logo2.png" alt="Railway Gauge Reference 1" style="max-width: 100%; height: auto; border: 1px solid #ddd; padding: 10px; border-radius: 5px;">
@@ -53,7 +71,6 @@ layout: default
         <li>Extracted gauge values</li>
         <li>Tolerance classification</li>
         <li>Visualization along the section</li>
-        <li>Short explanation of method and assumptions</li>
         <li>"How we did it" documentation</li>
     </ul>
     
@@ -63,7 +80,6 @@ layout: default
         <li><strong>Correctness:</strong> Are calculations and logic correct?</li>
         <li><strong>Visualization Quality:</strong> Is the output clear and readable?</li>
         <li><strong>Robustness:</strong> Is the workflow well-structured?</li>
-        <li><strong>Clarity:</strong> Are assumptions clearly stated?</li>
     </ul>
     
     <h3>What It Teaches</h3>
@@ -74,17 +90,8 @@ layout: default
         <li>Turning spatial data into interpretable engineering outputs</li>
     </ul>
     
-    <h3>How We Did It — Report Required</h3>
-    <p>Your team must report:</p>
-    <ul>
-        <li>Which AI tools you used for code, interpretation, or workflow design</li>
-        <li>How you asked AI to understand the gauge specification</li>
-        <li>What processing steps were AI-generated versus human-designed</li>
-        <li>Where the workflow was fragile or required manual intervention</li>
-    </ul>
-    
-    <h3>Data and Resources</h3>
-    <a href="#" class="download-btn">Download Point Cloud & Specs</a>
+    <h3>Submission</h3>
+    <a href="#" class="submit-btn">Submit Solution & Report</a>
     
     <h3>Submission</h3>
     <a href="#" class="submit-btn">Submit Solution & Report</a>

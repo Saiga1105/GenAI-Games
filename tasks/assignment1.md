@@ -9,11 +9,13 @@ layout: default
 </div>
 
 <div class="content-section">
-    <div style="text-align: center; margin-bottom: 30px;">
-        <img src="assignment1/logo.png" alt="Task 1 Logo" style="max-width: 150px; height: auto;">
+    <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px;">
+        <div>
+            <h2 style="margin: 0;">Task 1: Bumbling Baboon</h2>
+            <p style="margin: 5px 0 0 0;"><strong>Type:</strong> Presentation / Communication</p>
+        </div>
+        <img src="assignment1/logo.png" alt="Task 1 Logo" style="width: 200px; height: auto; flex-shrink: 0;">
     </div>
-    <h2>Task 1: Bumbling Baboon</h2>
-    <p><strong>Type:</strong> Presentation / Communication</p>
     
     <h3>Goal</h3>
     <p>Create a 5-minute presentation on the research topic of another group.</p>
@@ -53,8 +55,6 @@ layout: default
         <li>Concise storytelling and explaining unfamiliar topics quickly</li>
     </ul>
     
-    <h3>Data and Resources</h3>
-    <a href="#" class="download-btn">Download Topic Brief</a>
     
     <h3>Submission</h3>
     <a href="#" class="submit-btn">Submit Presentation & Report</a>

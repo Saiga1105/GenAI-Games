@@ -9,11 +9,13 @@ layout: default
 </div>
 
 <div class="content-section">
-    <div style="text-align: center; margin-bottom: 30px;">
-        <img src="assignment3/logo.png" alt="Task 3 Logo" style="max-width: 150px; height: auto;">
+    <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px;">
+        <div>
+            <h2 style="margin: 0;">Task 3: Into the Blue</h2>
+            <p style="margin: 5px 0 0 0;"><strong>Type:</strong> Research / Literature Mapping</p>
+        </div>
+        <img src="assignment3/logo.png" alt="Task 3 Logo" style="width: 200px; height: auto; flex-shrink: 0;">
     </div>
-    <h2>Task 3: Into the Blue</h2>
-    <p><strong>Type:</strong> Deep Research / Browser / Literature Mapping</p>
     
     <h3>Goal</h3>
     <p>Produce a one-page literature scan on a topic from another group.</p>
@@ -59,18 +61,7 @@ layout: default
         <li>How to separate "survey the field" from "answer the question"</li>
         <li>How to use browser-enabled AI critically</li>
     </ul>
-    
-    <h3>How We Did It — Report Required</h3>
-    <p>Your team must report:</p>
-    <ul>
-        <li>Which research or browsing tools you used</li>
-        <li>Your search/prompt strategy</li>
-        <li>How you checked sources and filtered weak references</li>
-        <li>Where AI hallucinated or overreached</li>
-    </ul>
-    
-    <h3>Data and Resources</h3>
-    <a href="#" class="download-btn">Download Research Question</a>
+
     
     <h3>Submission</h3>
     <a href="#" class="submit-btn">Submit Literature Scan & Report</a>

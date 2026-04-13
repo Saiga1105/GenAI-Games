@@ -9,19 +9,21 @@ layout: default
 </div>
 
 <div class="content-section">
-    <div style="text-align: center; margin-bottom: 30px;">
-        <img src="assignment4/logo.png" alt="Task 4 Logo" style="max-width: 150px; height: auto;">
+    <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px;">
+        <div>
+            <h2 style="margin: 0;">Task 4: Just Give Me a Moment</h2>
+            <p style="margin: 5px 0 0 0;"><strong>Type:</strong> Technical Reasoning — Steel Structure</p>
+        </div>
+        <img src="assignment4/logo.png" alt="Task 4 Logo" style="width: 200px; height: auto; flex-shrink: 0;">
     </div>
-    <h2>Task 4: Just Give Me a Moment</h2>
-    <p><strong>Type:</strong> Technical Reasoning — Steel Structure</p>
     
     <div style="text-align: center; margin: 20px 0;">
-        <img src="../tasks/staal1.png" alt="Steel Frame Problem" style="max-width: 100%; height: auto; border: 1px solid #ddd; padding: 10px; border-radius: 5px;">
+        <img src="assignment4/staal1.png" alt="Steel Frame Problem" style="max-width: 100%; height: auto; border: 1px solid #ddd; padding: 10px; border-radius: 5px;">
         <p style="font-size: 0.9em; color: #666; margin-top: 10px;"><em>Problem outline and reference diagram</em></p>
     </div>
     
     <h3>Goal</h3>
-    <p>Solve a structural reasoning task on the steel frame in the provided file. Determine the bending moment representation, the vertical reaction at the left support, and the maximum vertical displacement of the horizontal beam.</p>
+    <p>Solve a structural reasoning task on the steel frame in the provided file. </p>
     
     <h3>Problem Statement</h3>
     <p><strong>Material & Design:</strong> All members are steel grade S235, cross-section IPE240</p>
@@ -36,12 +38,7 @@ layout: default
     <h3>Brief</h3>
     <p>Use AI to support your structural reasoning, identify the right formulas and assumptions, and produce a clear engineering answer.</p>
     
-    <h3>Rules</h3>
-    <ul>
-        <li>No coding required</li>
-        <li>AI may be used for reasoning, checking formulas, structuring, and explanation</li>
-        <li>Final answer must be coherent and technically justified</li>
-    </ul>
+  
     
     <h3>Deliverables</h3>
     <ul>
@@ -68,9 +65,6 @@ layout: default
     </ul>
     
    
-    
-    <h3>Data and Resources</h3>
-    <a href="#" class="download-btn">Download Steel Frame Problem</a>
     
     <h3>Submission</h3>
     <a href="#" class="submit-btn">Submit Solution & Report</a>

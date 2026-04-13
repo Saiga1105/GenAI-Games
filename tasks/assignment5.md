@@ -9,17 +9,20 @@ layout: default
 </div>
 
 <div class="content-section">
-    <div style="text-align: center; margin-bottom: 30px;">
-        <img src="assignment5/logo.png" alt="Task 5 Logo" style="max-width: 150px; height: auto;">
+    <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px;">
+        <div>
+            <h2 style="margin: 0;">Task 5: Time to Start Cracking</h2>
+            <p style="margin: 5px 0 0 0;"><strong>Type:</strong> Technical Reasoning — Concrete</p>
+        </div>
+        <img src="assignment5/logo.png" alt="Task 5 Logo" style="width: 200px; height: auto; flex-shrink: 0;">
     </div>
-    <h2>Task 5: Time to Start Cracking</h2>
-    <p><strong>Type:</strong> Technical Reasoning — Concrete</p>
     
     <div style="text-align: center; margin: 20px 0;">
         <img src="assignment5/beton1.png" alt="Concrete Problem Reference" style="max-width: 100%; height: auto; border: 1px solid #ddd; padding: 10px; border-radius: 5px;">
         <p style="font-size: 0.9em; color: #666; margin-top: 10px;"><em>Problem reference diagram</em></p>
     </div>
-    
+    <h3>Brief</h3>
+    <p>Use AI to reason through the hydration problem, organize the required calculations, and explain the physical meaning of the result.</p>
     <h3>Problem Statement</h3>
     
     <h4>1. Hydration of Portland Cement</h4>
@@ -36,21 +39,14 @@ layout: default
     
     <p><strong>Question:</strong> When will an average compressive strength of f<sub>cm,cub150</sub> = 45 N/mm² be reached on the construction site? (Average daily temperatures provided in a table)</p>
     
-    <h3>Brief</h3>
-    <p>Use AI to reason through the hydration problem, organize the required calculations, and explain the physical meaning of the result.</p>
     
-    <h3>Rules</h3>
-    <ul>
-        <li>Focus only on the first question</li>
-        <li>No coding required</li>
-        <li>Final answer should combine calculation and interpretation</li>
-    </ul>
+    
+
     
     <h3>Deliverables</h3>
     <ul>
         <li>Final answer</li>
         <li>Short explanation of the reasoning</li>
-        <li>Clear assumptions stated</li>
         <li>"How we did it" documentation</li>
     </ul>
     
@@ -58,7 +54,6 @@ layout: default
     <ul>
         <li><strong>Correctness:</strong> Is the answer accurate?</li>
         <li><strong>Clarity:</strong> Is the explanation clear?</li>
-        <li><strong>Physical Interpretation:</strong> Does it show understanding of the physics?</li>
         <li><strong>Reasoning Quality:</strong> Is the logic sound?</li>
     </ul>
     
@@ -70,8 +65,6 @@ layout: default
     </ul>
 
     
-    <h3>Data and Resources</h3>
-    <a href="#" class="download-btn">Download Cement Hydration Problem</a>
     
     <h3>Submission</h3>
     <a href="#" class="submit-btn">Submit Solution & Report</a>

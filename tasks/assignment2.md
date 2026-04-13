@@ -9,11 +9,13 @@ layout: default
 </div>
 
 <div class="content-section">
-    <div style="text-align: center; margin-bottom: 30px;">
-        <img src="assignment2/logo.png" alt="Task 2 Logo" style="max-width: 150px; height: auto;">
+    <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px;">
+        <div>
+            <h2 style="margin: 0;">Task 2: Picasso, Is That You?</h2>
+            <p style="margin: 5px 0 0 0;"><strong>Type:</strong> Poster / Visual Communication</p>
+        </div>
+        <img src="assignment2/logo.png" alt="Task 2 Logo" style="width: 200px; height: auto; flex-shrink: 0;">
     </div>
-    <h2>Task 2: Picasso, Is That You?</h2>
-    <p><strong>Type:</strong> Poster / Visual Scientific Communication</p>
     
     <h3>Goal</h3>
     <p>Turn one of the Ghent research domains into an A1 research poster.</p>
@@ -63,9 +65,6 @@ layout: default
         <li>Audience-oriented design</li>
     </ul>
     
-    
-    <h3>Data and Resources</h3>
-    <a href="#" class="download-btn">Download Domain Brief</a>
     
     <h3>Submission</h3>
     <a href="#" class="submit-btn">Submit Poster & Report</a>
