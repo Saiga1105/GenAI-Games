@@ -55,48 +55,47 @@ layout: default
             <h3><a href="assignment3.html">Task 3: Into the Blue</a></h3>
             <p><strong>Type:</strong> Research / Literature Mapping<br>Produce a one-page literature scan on a narrowly scoped research question.</p>
             <div class="card-buttons">
-                <a href="#" class="download-btn">Download Brief</a>
-                <a href="assignment3.html" class="submit-btn">View & 
+                <a href="assignment3.html" class="submit-btn">View & Submit</a>
+            </div>
         </div>
         <div class="card">
             <img src="assignment4/logo.png" alt="GenAI Logo" class="card-image">
             <h3><a href="assignment4.html">Task 4: Just Give Me a Moment</a></h3>
             <p><strong>Type:</strong> Technical Reasoning (Steel)<br>Solve a structural steel frame problem using AI support.</p>
             <div class="card-buttons">
-                <a href="#" class="download-btn">Download Brief</a>
-                <a href="assignment4.html" class="submit-btn">View & 
+                <a href="assignment4.html" class="submit-btn">View & Submit</a>
+            </div>
         </div>
         <div class="card">
             <img src="assignment5/logo.png" alt="GenAI Logo" class="card-image">
             <h3><a href="assignment5.html">Task 5: Time to Start Cracking</a></h3>
             <p><strong>Type:</strong> Technical Reasoning (Concrete)<br>Solve a cement hydration problem using AI reasoning.</p>
             <div class="card-buttons">
-                <a href="#" class="download-btn">Download Brief</a>
-                <a href="#" class="submit-btn">Submit</a>
-            </div>assignment5.html" class="submit-btn">View & 
+                <a href="assignment5.html" class="submit-btn">View & Submit</a>
+            </div>
+        </div>
         <div class="card">
             <img src="assignment6/logo.png" alt="GenAI Logo" class="card-image">
             <h3><a href="assignment6.html">Task 6: Good Vibes</a></h3>
             <p><strong>Type:</strong> Technical Reasoning (Dynamics)<br>Solve a footbridge vibration problem with TMD design.</p>
             <div class="card-buttons">
-                <a href="#" class="download-btn">Download Brief</a>
-                <a href="#" class="submit-btn">Submit</a>
-            </div>assignment6.html" class="submit-btn">View & 
+                <a href="assignment6.html" class="submit-btn">View & Submit</a>
+            </div>
+        </div>
         <div class="card">
             <img src="assignment7/logo.png" alt="GenAI Logo" class="card-image">
             <h3><a href="assignment7.html">Task 7: And Then There Was Light</a></h3>
             <p><strong>Type:</strong> Coding + Visualization<br>Compute daylight metrics and create a pass/fail floor-plan visualization.</p>
             <div class="card-buttons">
-                <a href="#" class="download-btn">Download Brief</a>
-                <a href="#" class="submit-btn">Submit</a>
-            </div>assignment7.html" class="submit-btn">View & 
+                <a href="assignment7.html" class="submit-btn">View & Submit</a>
+            </div>
+        </div>
         <div class="card">
             <img src="assignment8/logo.png" alt="GenAI Logo" class="card-image">
             <h3><a href="assignment8.html">Task 8: CHOO CHOO</a></h3>
             <p><strong>Type:</strong> Advanced Coding + Depth<br>Extract railway gauge values and visualize tolerance compliance.</p>
             <div class="card-buttons">
-                <a href="#" class="download-btn">Download Brief</a>
-                <a href="#" class="submit-btn">Submit</a>
+                <a href="assignment8.html" class="submit-btn">View & Submit</a>
             </div>
-        </div>assignment8.html" class="submit-btn">View & 
-</div>
+        </div>
+    </div>
