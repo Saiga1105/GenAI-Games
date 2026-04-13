@@ -21,6 +21,16 @@ layout: default
         <p style="font-size: 0.9em; color: #666; margin-top: 10px;"><em>Problem reference diagrams</em></p>
     </div>
     
+    <h3>Problem Statement</h3>
+    <p><strong>Structure:</strong> Inspired by Parkbos footbridge with steel box section and concrete deck</p>
+    
+    <h3>Questions to Solve:</h3>
+    <ol>
+        <li><strong>Fundamental Frequency:</strong> What is the fundamental vertical natural frequency in Hz?</li>
+        <li><strong>Tuned Mass Damper:</strong> What is the required mass of a Tuned Mass Damper (TMD) attached at midspan to reduce the contribution of the first mode to the acceleration level by a factor of 10 (corresponding to an increase in damping from 0.4% to 4%)?</li>
+        <li><strong>Frequency Response Function:</strong> Present the frequency response function (FRF) for input and output at midspan without and with the TMD</li>
+    </ol>
+    
     <h3>Brief</h3>
     <p>Use AI to support structural dynamics reasoning, calculation setup, and interpretation.</p>
     
@@ -55,14 +65,6 @@ layout: default
         <li>Identifying where AI is reliable or unreliable in advanced mechanics</li>
     </ul>
     
-    <h3>How We Did It — Report Required</h3>
-    <p>Your team must report:</p>
-    <ul>
-        <li>Which tool you used</li>
-        <li>Whether you used AI mainly for formulas, derivation, checking, or explanation</li>
-        <li>What you verified manually</li>
-        <li>Where AI made mistakes or skipped assumptions</li>
-    </ul>
     
     <h3>Data and Resources</h3>
     <a href="#" class="download-btn">Download Footbridge Problem</a>
