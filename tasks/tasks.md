@@ -17,12 +17,16 @@ layout: default
     <ul>
         <li><strong>Team name</strong></li>
         <li><strong>Main output</strong> (the solution/deliverable)</li>
-        <li><strong>How we did it</strong> — This is important! The goal is not only to solve the task, but also to <strong>learn how different AI approaches work</strong></li>
-            <li><strong>AI tools used</strong> — Which tools did you employ?</li>
-            <li><strong>Main prompt or workflow</strong> — What did you ask the AI to do?</li>
-            <li><strong>What we checked manually</strong> — Did you verify the AI output?</li>
-            <li><strong>Where AI helped most</strong> — Which part of the task did AI solve best?</li>
-            <li><strong>Confidence level: 1–5</strong> — How confident are you in your solution?</li>
+        <li>
+            <strong>How we did it</strong> — This is important! The goal is not only to solve the task, but also to <strong>learn how different AI approaches work</strong>
+            <ul style="margin-top: 10px;">
+                <li><strong>AI tools used</strong> — Which tools did you employ?</li>
+                <li><strong>Main prompt or workflow</strong> — What did you ask the AI to do?</li>
+                <li><strong>What we checked manually</strong> — Did you verify the AI output?</li>
+                <li><strong>Where AI helped most</strong> — Which part of the task did AI solve best?</li>
+                <li><strong>Confidence level: 1–5</strong> — How confident are you in your solution?</li>
+            </ul>
+        </li>
     </ul>
     
 </div>
