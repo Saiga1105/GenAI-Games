@@ -1,4 +1,5 @@
 title: "GenAI Games"
 description: "A playful, high-energy research event where PhD researchers from four construction-related research groups compete in mixed teams to solve short challenges using generative AI."
+scoreboard_sheet_id: "16dZPzUlW7fY6nvecKZnOQiqAmT8yvJUDH0q6_0qD0gU"
 exclude:
   - serve-local.ps1
