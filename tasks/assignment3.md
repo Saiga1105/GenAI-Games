@@ -64,5 +64,5 @@ layout: default
 
     
     <h3>Submission</h3>
-    <a href="#" class="submit-btn">Submit Literature Scan & Report</a>
+    <a href="https://kuleuven-my.sharepoint.com/:f:/g/personal/maarten_bassier_kuleuven_be/IgDWXqXngeB1RZ41G5HnvCG-AY9Z1YX5woyZBmJXPOpawkw?e=IKLclh" class="submit-btn" target="_blank" rel="noopener noreferrer">Submit Literature Scan & Report</a>
 </div>

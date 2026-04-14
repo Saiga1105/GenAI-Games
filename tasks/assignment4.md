@@ -18,7 +18,7 @@ layout: default
     </div>
     
     <div style="text-align: center; margin: 20px 0;">
-        <img src="assignment4/staal1.png" alt="Steel Frame Problem" style="max-width: 100%; height: auto; border: 1px solid #ddd; padding: 10px; border-radius: 5px;">
+        <img src="assignment4/staal1.jpg" alt="Steel Frame Problem" style="max-width: 100%; height: auto; border: 1px solid #ddd; padding: 10px; border-radius: 5px;">
         <p style="font-size: 0.9em; color: #666; margin-top: 10px;"><em>Problem outline and reference diagram</em></p>
     </div>
     
@@ -67,5 +67,5 @@ layout: default
    
     
     <h3>Submission</h3>
-    <a href="#" class="submit-btn">Submit Solution & Report</a>
+    <a href="https://kuleuven-my.sharepoint.com/:f:/g/personal/maarten_bassier_kuleuven_be/IgDWXqXngeB1RZ41G5HnvCG-AY9Z1YX5woyZBmJXPOpawkw?e=IKLclh" class="submit-btn" target="_blank" rel="noopener noreferrer">Submit Solution & Report</a>
 </div>

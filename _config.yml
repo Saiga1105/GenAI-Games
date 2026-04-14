@@ -1,2 +1,4 @@
 title: "GenAI Games"
 description: "A playful, high-energy research event where PhD researchers from four construction-related research groups compete in mixed teams to solve short challenges using generative AI."
+exclude:
+  - serve-local.ps1
